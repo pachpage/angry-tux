@@ -1,0 +1,1459 @@
+# depslib dependency file v1.0
+1286545016 source:/home/nico/Bureau/ Documents/lancepierre/Game/main.cpp
+	<Box2D/Box2D.h>
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	<iostream>
+	<cmath>
+
+1270311482 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Box2D.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2LineJoint.h>
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+
+1270285392 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2Settings.h
+	<cassert>
+	<cmath>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2CircleShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1267981994 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2Shape.h
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2BlockAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1271112524 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2Math.h
+	<Box2D/Common/b2Settings.h>
+	<cmath>
+	<cfloat>
+	<cstddef>
+	<limits>
+
+1269893566 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Collision.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2PolygonShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2BroadPhase.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<algorithm>
+
+1267896674 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2DynamicTree.h
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Distance.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2TimeOfImpact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Distance.h>
+	<climits>
+
+1270310106 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Body.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<memory>
+
+1270310584 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Fixture.h
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1269783500 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2WorldCallbacks.h
+	<Box2D/Common/b2Settings.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2TimeStep.h
+	<Box2D/Common/b2Settings.h>
+
+1269336064 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2World.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Dynamics/b2ContactManager.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2StackAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1269215376 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2ContactManager.h
+	<Box2D/Collision/b2BroadPhase.h>
+
+1271283140 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Contacts/b2Contact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/b2Fixture.h>
+
+1270310214 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2DistanceJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2Joint.h
+	<Box2D/Common/b2Math.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2FrictionJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2GearJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267487556 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2LineJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2MouseJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267406140 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PrismaticJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PulleyJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2RevoluteJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2WeldJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Randomizer.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Config.hpp
+	<climits>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Clock.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Lock.hpp
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/NonCopyable.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Mutex.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Mutex.hpp>
+	<SFML/System/Unix/Mutex.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Win32/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Unix/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Randomizer.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Sleep.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Thread.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Thread.hpp>
+	<SFML/System/Unix/Thread.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Win32/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Unix/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Unicode.hpp
+	<SFML/Config.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<stdlib.h>
+	<SFML/System/Unicode.inl>
+
+1277295780 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Unicode.inl
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Vector2.inl
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Vector3.inl
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PostFX.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/String.hpp>
+	<SFML/Graphics/View.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/OpenGL.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/Context.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/Event.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/Input.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/WindowListener.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowListener.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/VideoMode.hpp
+	<SFML/Config.hpp>
+	<cstdlib>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/Window.hpp
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowSettings.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<queue>
+	<string>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowHandle.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowSettings.hpp
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowStyle.hpp
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Window/OpenGL.hpp
+	<SFML/Config.hpp>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Color.hpp
+	<SFML/Config.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Font.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Resource.hpp
+	<set>
+	<SFML/System/Resource.inl>
+	<SFML/System/ResourcePtr.inl>
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/Resource.inl
+
+1277297908 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/System/ResourcePtr.inl
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Glyph.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Rect.hpp
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Rect.inl
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Image.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/PostFX.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Image.hpp>
+	<istream>
+	<map>
+	<string>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Drawable.hpp
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Matrix3.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector2.hpp>
+	<math.h>
+	<SFML/Graphics/Matrix3.inl>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Matrix3.inl
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/RenderWindow.hpp
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/RenderTarget.hpp
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/View.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+	<SFML/System/Vector2.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Shape.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/System/Vector2.hpp>
+	<vector>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Sprite.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Bureau/ Documents/lancepierre/ExternLibrairie/SFML-1.6/include/SFML/Graphics/String.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+
+1295623223 source:/home/nico/Documents/angrytux/Game/src/Game/GameManager.cpp
+	"GameManager.h"
+
+1289043118 /home/nico/Documents/angrytux/Game/src/Game/GameManager.h
+	<SFML/Graphics.hpp>
+	<Box2D/Box2D.h>
+	"../Utilities/Config.h"
+	"../Entities/EntityManager.h"
+	"../Map/MapManager.h"
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PostFX.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/String.hpp>
+	<SFML/Graphics/View.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/OpenGL.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Randomizer.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Config.hpp
+	<climits>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Clock.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Lock.hpp
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/NonCopyable.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Mutex.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Mutex.hpp>
+	<SFML/System/Unix/Mutex.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Win32/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Unix/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Randomizer.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Sleep.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Thread.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Thread.hpp>
+	<SFML/System/Unix/Thread.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Win32/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Unix/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Unicode.hpp
+	<SFML/Config.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<stdlib.h>
+	<SFML/System/Unicode.inl>
+
+1277295780 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Unicode.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Vector2.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Vector3.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/Context.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/Event.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/Input.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/WindowListener.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowListener.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/VideoMode.hpp
+	<SFML/Config.hpp>
+	<cstdlib>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/Window.hpp
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowSettings.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<queue>
+	<string>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowHandle.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowSettings.hpp
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/WindowStyle.hpp
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Window/OpenGL.hpp
+	<SFML/Config.hpp>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Color.hpp
+	<SFML/Config.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Font.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Resource.hpp
+	<set>
+	<SFML/System/Resource.inl>
+	<SFML/System/ResourcePtr.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/Resource.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/System/ResourcePtr.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Glyph.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Rect.hpp
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Rect.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Image.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/PostFX.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Image.hpp>
+	<istream>
+	<map>
+	<string>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Drawable.hpp
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Matrix3.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector2.hpp>
+	<math.h>
+	<SFML/Graphics/Matrix3.inl>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Matrix3.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/RenderWindow.hpp
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/RenderTarget.hpp
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/View.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+	<SFML/System/Vector2.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Shape.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/System/Vector2.hpp>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/Sprite.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Graphics/String.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+
+1270311482 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Box2D.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2LineJoint.h>
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+
+1270285392 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2Settings.h
+	<cassert>
+	<cmath>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2CircleShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1267981994 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2Shape.h
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2BlockAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1271112524 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2Math.h
+	<Box2D/Common/b2Settings.h>
+	<cmath>
+	<cfloat>
+	<cstddef>
+	<limits>
+
+1269893566 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Collision.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2PolygonShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2BroadPhase.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<algorithm>
+
+1267896674 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2DynamicTree.h
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Distance.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Collision/b2TimeOfImpact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Distance.h>
+	<climits>
+
+1270310106 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Body.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<memory>
+
+1270310584 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Fixture.h
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1269783500 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2WorldCallbacks.h
+	<Box2D/Common/b2Settings.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2TimeStep.h
+	<Box2D/Common/b2Settings.h>
+
+1269336064 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2World.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Dynamics/b2ContactManager.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Common/b2StackAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1269215376 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2ContactManager.h
+	<Box2D/Collision/b2BroadPhase.h>
+
+1271283140 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Contacts/b2Contact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/b2Fixture.h>
+
+1270310214 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2DistanceJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2Joint.h
+	<Box2D/Common/b2Math.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2FrictionJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2GearJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267487556 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2LineJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2MouseJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267406140 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PrismaticJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PulleyJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2RevoluteJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairie/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2WeldJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1286960533 /home/nico/Documents/angrytux/Game/src/Utilities/Singleton.h
+	<iostream>
+
+1289042930 /home/nico/Documents/angrytux/Game/src/Utilities/Config.h
+	"Singleton.h"
+	"Logger.h"
+	"RessourceManager.h"
+
+1295611935 source:/home/nico/Documents/angrytux/Game/src/Map/MapManager.cpp
+	"MapManager.h"
+	<sstream>
+
+1295004052 /home/nico/Documents/angrytux/Game/src/Map/MapManager.h
+	"../Utilities/Singleton.h"
+	<map>
+	"Map.h"
+	<dirent.h>
+
+1289042977 source:/home/nico/Documents/angrytux/Game/src/Utilities/Config.cpp
+	"Config.h"
+
+1295616005 source:/home/nico/Documents/angrytux/Game/src/Utilities/Conversion.cpp
+	"Conversion.h"
+
+1295616010 /home/nico/Documents/angrytux/Game/src/Utilities/Conversion.h
+	"Config.h"
+
+1287558593 source:/home/nico/Documents/angrytux/Game/src/Utilities/Logger.cpp
+	"Logger.h"
+
+1287558527 /home/nico/Documents/angrytux/Game/src/Utilities/Logger.h
+	"Singleton.h"
+	<iostream>
+	<fstream>
+	"Config.h"
+
+1295029401 source:/home/nico/Documents/angrytux/Game/src/Utilities/RessourceManager.cpp
+	"RessourceManager.h"
+
+1295029059 /home/nico/Documents/angrytux/Game/src/Utilities/RessourceManager.h
+	"Singleton.h"
+	<map>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+
+1289057569 source:/home/nico/Documents/angrytux/Game/src/main.cpp
+	<iostream>
+	"Utilities/Config.h"
+	"Game/GameManager.h"
+
+1295616212 source:/home/nico/Documents/angrytux/Game/src/Entities/Entity.cpp
+	"Entity.h"
+
+1295606024 /home/nico/Documents/angrytux/Game/src/Entities/Entity.h
+	"../Utilities/Config.h"
+	"../Utilities/Conversion.h"
+
+1295612095 source:/home/nico/Documents/angrytux/Game/src/Entities/EntityManager.cpp
+	"EntityManager.h"
+
+1295609469 /home/nico/Documents/angrytux/Game/src/Entities/EntityManager.h
+	"../Utilities/Config.h"
+	"Texture.h"
+	"Obstacle.h"
+	"Bar.h"
+	<Box2D/Box2D.h>
+	<vector>
+
+1295606049 /home/nico/Documents/angrytux/Game/src/Entities/Texture.h
+	"Entity.h"
+
+1295616050 source:/home/nico/Documents/angrytux/Game/src/Entities/Obstacle.cpp
+	"Obstacle.h"
+
+1295606042 /home/nico/Documents/angrytux/Game/src/Entities/Obstacle.h
+	"Texture.h"
+	<Box2D/Box2D.h>
+
+1295616278 source:/home/nico/Documents/angrytux/Game/src/Entities/Texture.cpp
+	"Texture.h"
+	<math.h>
+	<sstream>
+
+1295617117 source:/home/nico/Documents/angrytux/Game/src/Entities/Bar.cpp
+	"Bar.h"
+
+1295617111 /home/nico/Documents/angrytux/Game/src/Entities/Bar.h
+	"Entity.h"
+	<Box2D/Box2D.h>
+
+1286961400 source:/home/nico/Documents/angrytux/Game/src/Entities/Bear.cpp
+	"Bear.h"
+
+1286989196 /home/nico/Documents/angrytux/Game/src/Entities/Bear.h
+
+1286961349 source:/home/nico/Documents/angrytux/Game/src/Entities/Tux.cpp
+	"Tux.h"
+
+1286989209 /home/nico/Documents/angrytux/Game/src/Entities/Tux.h
+
+1295004193 /home/nico/Documents/angrytux/Game/src/Map/Map.h
+	<tinyxml.h>
+	"../Utilities/Config.h"
+	"../Entities/EntityManager.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinystr.h
+	<assert.h>
+	<string.h>
+
+1295606502 source:/home/nico/Documents/angrytux/Game/src/Map/Map.cpp
+	"Map.h"
+	<tinyxml.h>
+	<tinyxml.cpp>
+	<tinyxmlerror.cpp>
+	<tinyxmlparser.cpp>
+	<tinystr.cpp>
+	<tinystr.h>
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinyxmlerror.cpp
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairie/tinyxml/tinystr.cpp
+	"tinystr.h"
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/Listener.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector3.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/Music.hpp
+	<SFML/Audio/SoundStream.hpp>
+	<string>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/SoundStream.hpp
+	<SFML/Audio/Sound.hpp>
+	<SFML/System/Thread.hpp>
+	<cstdlib>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/Sound.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<cstdlib>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/AudioResource.hpp
+	<SFML/Config.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/SoundBuffer.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<string>
+	<vector>
+	<set>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/SoundBufferRecorder.hpp
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairie/SFML-1.6/include/SFML/Audio/SoundRecorder.hpp
+	<SFML/System/Thread.hpp>
+	<vector>
+
+1295706639 source:/home/nico/Documents/angrytux/Game/src/Gui/Component.cpp
+	"Component.h"
+
+1295706626 /home/nico/Documents/angrytux/Game/src/Gui/Component.h
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"../Utilities/RessourceManager.h"
+
+1295606599 source:/home/nico/Documents/angrytux/Game/src/Gui/Image.cpp
+	"Image.h"
+
+1295605309 /home/nico/Documents/angrytux/Game/src/Gui/Image.h
+	"Component.h"
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PostFX.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/String.hpp>
+	<SFML/Graphics/View.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window.hpp
+	<SFML/System.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/Window/OpenGL.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Randomizer.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Config.hpp
+	<climits>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Clock.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Lock.hpp
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/NonCopyable.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Mutex.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Mutex.hpp>
+	<SFML/System/Unix/Mutex.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Win32/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Unix/Mutex.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Randomizer.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Sleep.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Thread.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Win32/Thread.hpp>
+	<SFML/System/Unix/Thread.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Win32/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<windows.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Unix/Thread.hpp
+	<SFML/System/NonCopyable.hpp>
+	<pthread.h>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Unicode.hpp
+	<SFML/Config.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<stdlib.h>
+	<SFML/System/Unicode.inl>
+
+1277295780 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Unicode.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Vector2.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Vector3.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/Context.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/Event.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/Input.hpp
+	<SFML/Config.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/WindowListener.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/WindowListener.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/VideoMode.hpp
+	<SFML/Config.hpp>
+	<cstdlib>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/Window.hpp
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Input.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowListener.hpp>
+	<SFML/Window/WindowSettings.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<queue>
+	<string>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/WindowHandle.hpp
+	<SFML/Config.hpp>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/WindowSettings.hpp
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/WindowStyle.hpp
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Window/OpenGL.hpp
+	<SFML/Config.hpp>
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Color.hpp
+	<SFML/Config.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Font.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Resource.hpp
+	<set>
+	<SFML/System/Resource.inl>
+	<SFML/System/ResourcePtr.inl>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/Resource.inl
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/System/ResourcePtr.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Glyph.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Rect.hpp
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Rect.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Image.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/PostFX.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Image.hpp>
+	<istream>
+	<map>
+	<string>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Drawable.hpp
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Matrix3.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector2.hpp>
+	<math.h>
+	<SFML/Graphics/Matrix3.inl>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Matrix3.inl
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/RenderWindow.hpp
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/RenderTarget.hpp
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/View.hpp
+	<SFML/Config.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Matrix3.hpp>
+	<SFML/System/Vector2.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Shape.hpp
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/System/Vector2.hpp>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/Sprite.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Rect.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Graphics/String.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Unicode.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+
+1277297908 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/Listener.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Vector3.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/Music.hpp
+	<SFML/Audio/SoundStream.hpp>
+	<string>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/SoundStream.hpp
+	<SFML/Audio/Sound.hpp>
+	<SFML/System/Thread.hpp>
+	<cstdlib>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/Sound.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<cstdlib>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/AudioResource.hpp
+	<SFML/Config.hpp>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/SoundBuffer.hpp
+	<SFML/System/Resource.hpp>
+	<SFML/Audio/AudioResource.hpp>
+	<string>
+	<vector>
+	<set>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/SoundBufferRecorder.hpp
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1277297910 /home/nico/Documents/angrytux/ExternLibrairies/SFML-1.6/include/SFML/Audio/SoundRecorder.hpp
+	<SFML/System/Thread.hpp>
+	<vector>
+
+1270311482 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Box2D.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/Shapes/b2CircleShape.h>
+	<Box2D/Collision/Shapes/b2PolygonShape.h>
+	<Box2D/Collision/b2BroadPhase.h>
+	<Box2D/Collision/b2Distance.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<Box2D/Collision/b2TimeOfImpact.h>
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Dynamics/b2Fixture.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+	<Box2D/Dynamics/b2TimeStep.h>
+	<Box2D/Dynamics/b2World.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/Joints/b2DistanceJoint.h>
+	<Box2D/Dynamics/Joints/b2FrictionJoint.h>
+	<Box2D/Dynamics/Joints/b2GearJoint.h>
+	<Box2D/Dynamics/Joints/b2LineJoint.h>
+	<Box2D/Dynamics/Joints/b2MouseJoint.h>
+	<Box2D/Dynamics/Joints/b2PrismaticJoint.h>
+	<Box2D/Dynamics/Joints/b2PulleyJoint.h>
+	<Box2D/Dynamics/Joints/b2RevoluteJoint.h>
+	<Box2D/Dynamics/Joints/b2WeldJoint.h>
+
+1270285392 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Common/b2Settings.h
+	<cassert>
+	<cmath>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2CircleShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1267981994 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2Shape.h
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Common/b2BlockAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1271112524 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Common/b2Math.h
+	<Box2D/Common/b2Settings.h>
+	<cmath>
+	<cfloat>
+	<cstddef>
+	<limits>
+
+1269893566 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Collision.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/Shapes/b2PolygonShape.h
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/b2BroadPhase.h
+	<Box2D/Common/b2Settings.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/b2DynamicTree.h>
+	<algorithm>
+
+1267896674 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/b2DynamicTree.h
+	<Box2D/Collision/b2Collision.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/b2Distance.h
+	<Box2D/Common/b2Math.h>
+	<climits>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Collision/b2TimeOfImpact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Distance.h>
+	<climits>
+
+1270310106 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Body.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<memory>
+
+1270310584 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2Fixture.h
+	<Box2D/Dynamics/b2Body.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+
+1269783500 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2WorldCallbacks.h
+	<Box2D/Common/b2Settings.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2TimeStep.h
+	<Box2D/Common/b2Settings.h>
+
+1269336064 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2World.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Common/b2BlockAllocator.h>
+	<Box2D/Common/b2StackAllocator.h>
+	<Box2D/Dynamics/b2ContactManager.h>
+	<Box2D/Dynamics/b2WorldCallbacks.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Common/b2StackAllocator.h
+	<Box2D/Common/b2Settings.h>
+
+1269215376 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/b2ContactManager.h
+	<Box2D/Collision/b2BroadPhase.h>
+
+1271283140 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Contacts/b2Contact.h
+	<Box2D/Common/b2Math.h>
+	<Box2D/Collision/b2Collision.h>
+	<Box2D/Collision/Shapes/b2Shape.h>
+	<Box2D/Dynamics/Contacts/b2Contact.h>
+	<Box2D/Dynamics/b2Fixture.h>
+
+1270310214 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2DistanceJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2Joint.h
+	<Box2D/Common/b2Math.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2FrictionJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2GearJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267487556 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2LineJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2MouseJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1267406140 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PrismaticJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2PulleyJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2RevoluteJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1264986768 /home/nico/Documents/angrytux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2WeldJoint.h
+	<Box2D/Dynamics/Joints/b2Joint.h>
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinystr.h
+	<assert.h>
+	<string.h>
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinyxmlerror.cpp
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1269324996 /home/nico/Documents/angrytux/ExternLibrairies/tinyxml/tinystr.cpp
+	"tinystr.h"
+
+1295705533 source:/home/nico/Documents/angrytux/Game/src/Gui/Button.cpp
+	"Button.h"
+
+1295705769 /home/nico/Documents/angrytux/Game/src/Gui/Button.h
+	"Component.h"
+
