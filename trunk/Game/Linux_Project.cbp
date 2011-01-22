@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AngryTux" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AngryTux" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AngryTux" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../ExternLibrairies/Box2D_v2.1.2/Box2D" />
+			<Add directory="../ExternLibrairies/SFML-1.6/include" />
+			<Add directory="../ExternLibrairies/tinyxml" />
+		</Compiler>
+		<Linker>
+			<Add option="-lsfml-audio" />
+			<Add option="-lsfml-graphics" />
+			<Add option="-lsfml-window" />
+			<Add option="-lsfml-system" />
+			<Add library="../ExternLibrairies/Box2D_v2.1.2/Box2D/Build/Box2D/libBox2D.so" />
+			<Add directory="../ExternLibrairies/Box2D_v2.1.2/Box2D/Build" />
+			<Add directory="../ExternLibrairies/SFML-1.6/lib" />
+		</Linker>
+		<Unit filename="src/Entities/Bar.cpp" />
+		<Unit filename="src/Entities/Bar.h" />
+		<Unit filename="src/Entities/Bear.cpp" />
+		<Unit filename="src/Entities/Bear.h" />
+		<Unit filename="src/Entities/Entity.cpp" />
+		<Unit filename="src/Entities/Entity.h" />
+		<Unit filename="src/Entities/EntityManager.cpp" />
+		<Unit filename="src/Entities/EntityManager.h" />
+		<Unit filename="src/Entities/Obstacle.cpp" />
+		<Unit filename="src/Entities/Obstacle.h" />
+		<Unit filename="src/Entities/Texture.cpp" />
+		<Unit filename="src/Entities/Texture.h" />
+		<Unit filename="src/Entities/Tux.cpp" />
+		<Unit filename="src/Entities/Tux.h" />
+		<Unit filename="src/Game/GameManager.cpp" />
+		<Unit filename="src/Game/GameManager.h" />
+		<Unit filename="src/Gui/Button.cpp" />
+		<Unit filename="src/Gui/Button.h" />
+		<Unit filename="src/Gui/Component.cpp" />
+		<Unit filename="src/Gui/Component.h" />
+		<Unit filename="src/Map/Map.cpp" />
+		<Unit filename="src/Map/Map.h" />
+		<Unit filename="src/Map/MapManager.cpp" />
+		<Unit filename="src/Map/MapManager.h" />
+		<Unit filename="src/Utilities/Config.cpp" />
+		<Unit filename="src/Utilities/Config.h" />
+		<Unit filename="src/Utilities/Conversion.cpp" />
+		<Unit filename="src/Utilities/Conversion.h" />
+		<Unit filename="src/Utilities/Logger.cpp" />
+		<Unit filename="src/Utilities/Logger.h" />
+		<Unit filename="src/Utilities/PausableClock.h" />
+		<Unit filename="src/Utilities/RessourceManager.cpp" />
+		<Unit filename="src/Utilities/RessourceManager.h" />
+		<Unit filename="src/Utilities/Singleton.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
