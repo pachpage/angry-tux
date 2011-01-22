@@ -15,7 +15,7 @@ void Config::init() {
     fullscreen = false;
     debug = true;
     fps = 60;
-    image_path = "ressources/images/";
-    maps_path = "ressources/maps";
+    image_path = "resources/images/";
+    maps_path = "resources/maps";
     Logger::Instance()->init();
 }

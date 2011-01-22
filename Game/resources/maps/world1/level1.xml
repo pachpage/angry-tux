@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<map name="map de test" author="nico" date="10/10/2010" version="1">
+	<camera x="50" y="50" />
+	<layers>
+		<layer>
+			<texture x="400" y="5" width="500" height="10" class="texture" texture="" angle="0" repeat_x="true" repeat_y="true" color="0,128,90" />
+			<texture x="400" y="200" width="80" height="30" class="obstacle" texture="" angle="0" repeat_x="false" repeat_y="false" color="0,128,90" />
+		</layer>
+	</layers>
+	<bars>
+		<bar x="400" y="280" width="150" height="20" angle="90" type="4" texture="barre.png" />
+	</bars>
+	<bears>
+	</bears>
+	<tuxs>
+	</tuxs>
+</map>
