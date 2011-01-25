@@ -6,8 +6,9 @@
 #include <tinystr.cpp>
 #include <tinystr.h>
 
-Map::Map(std::string& file) : _file(file)
+Map::Map(std::string& file, int id) : _file(file)
 {
+    _id = id;
     TiXmlDocument doc( file.c_str() );
     if (!doc.LoadFile()) {
         Logger::Instance()->log("Unable to load the map : " + file + ":" + doc.ErrorDesc());
@@ -20,6 +21,8 @@ Map::Map(std::string& file) : _file(file)
             _author  = map->Attribute("author");
             _date    = map->Attribute("date");
             _version = map->Attribute("version");
+            map->QueryIntAttribute("width", &_mapSize.x);
+            map->QueryIntAttribute("height", &_mapSize.y);
 
             camera = map->FirstChildElement("camera");
             camera->QueryIntAttribute("x", &_camposition.x);
@@ -177,6 +180,10 @@ void Map::load() {
     }
 }
 
+int Map::getId() const {
+    return _id;
+}
+
 std::string Map::getName() const {
     return _name;
 }
@@ -195,4 +202,8 @@ std::string Map::getVersion() const {
 
 sf::Vector2i Map::getCamPosition() const {
     return _camposition;
+}
+
+sf::Vector2i Map::getMapSize() const {
+    return _mapSize;
 }

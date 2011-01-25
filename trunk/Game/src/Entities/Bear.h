@@ -16,14 +16,26 @@
 */
 #ifndef BEAR_H
 #define BEAR_H
+#include "Entity.h"
+#include <Box2D/Box2D.h>
 
-class Bear
+class Bear : public Entity
 {
     public:
-        Bear();
+        Bear(sf::RenderWindow* app
+            ,sf::Vector2i& position
+            ,std::string& path
+            ,int size
+            ,int score
+            ,b2World* world);
         virtual ~Bear();
+
+        void render();
     protected:
     private:
+        b2Body* _bearBody;
+        int _score;
+        int _size;
 };
 
 #endif // BEAR_H

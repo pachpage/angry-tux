@@ -1921,22 +1921,25 @@
 1264986768 /home/nico/Documents/angry-tux/ExternLibrairies/Box2D_v2.1.2/Box2D/Box2D/Dynamics/Joints/b2WeldJoint.h
 	<Box2D/Dynamics/Joints/b2Joint.h>
 
-1286961400 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bear.cpp
+1295963284 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bear.cpp
 	"Bear.h"
 
-1286989196 /home/nico/Documents/angry-tux/Game/src/Entities/Bear.h
+1295963061 /home/nico/Documents/angry-tux/Game/src/Entities/Bear.h
+	"Entity.h"
+	<Box2D/Box2D.h>
 
 1295616212 source:/home/nico/Documents/angry-tux/Game/src/Entities/Entity.cpp
 	"Entity.h"
 
-1295612095 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
+1295962874 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
 	"EntityManager.h"
 
-1295609469 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
+1295963033 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
 	"../Utilities/Config.h"
 	"Texture.h"
 	"Obstacle.h"
 	"Bar.h"
+	"Bear.h"
 	<Box2D/Box2D.h>
 	<vector>
 
@@ -1959,4 +1962,102 @@
 	"Tux.h"
 
 1286989209 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+
+1295967950 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+	"GameManager.h"
+
+1295967760 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
+	<SFML/Graphics.hpp>
+	<Box2D/Box2D.h>
+	"../Utilities/Config.h"
+	"../Entities/EntityManager.h"
+	"../Map/MapManager.h"
+
+1295968043 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
+	"../Utilities/Singleton.h"
+	<map>
+	"Map.h"
+	<dirent.h>
+
+1295967775 /home/nico/Documents/angry-tux/Game/src/Map/Map.h
+	<tinyxml.h>
+	"../Utilities/Config.h"
+	"../Entities/EntityManager.h"
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinystr.h
+	<assert.h>
+	<string.h>
+
+1295707806 source:/home/nico/Documents/angry-tux/Game/src/Gui/Button.cpp
+	"Button.h"
+
+1295707765 /home/nico/Documents/angry-tux/Game/src/Gui/Button.h
+	"Component.h"
+
+1295706626 /home/nico/Documents/angry-tux/Game/src/Gui/Component.h
+	<SFML/System.hpp>
+	<SFML/Graphics.hpp>
+	"../Utilities/RessourceManager.h"
+
+1295706639 source:/home/nico/Documents/angry-tux/Game/src/Gui/Component.cpp
+	"Component.h"
+
+1295967570 source:/home/nico/Documents/angry-tux/Game/src/Map/Map.cpp
+	"Map.h"
+	<tinyxml.h>
+	<tinyxml.cpp>
+	<tinyxmlerror.cpp>
+	<tinyxmlparser.cpp>
+	<tinystr.cpp>
+	<tinystr.h>
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinyxmlerror.cpp
+	"tinyxml.h"
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinystr.cpp
+	"tinystr.h"
+
+1295967716 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
+	"MapManager.h"
+	<sstream>
+
+1295709861 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Config.cpp
+	"Config.h"
+
+1295616005 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Conversion.cpp
+	"Conversion.h"
+
+1287558593 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Logger.cpp
+	"Logger.h"
+
+1295029401 source:/home/nico/Documents/angry-tux/Game/src/Utilities/RessourceManager.cpp
+	"RessourceManager.h"
+
+1295967902 source:/home/nico/Documents/angry-tux/Game/src/main.cpp
+	<iostream>
+	"Utilities/Config.h"
+	"Game/GameManager.h"
 

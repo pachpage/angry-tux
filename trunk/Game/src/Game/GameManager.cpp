@@ -18,15 +18,24 @@ void GameManager::init() {
     MapManager::Instance()->init();
 }
 
-void GameManager::newGame(const int world_num, const std::string& path) {
+void GameManager::newGame(const int world_num, int map_id) {
     createWorld();
     EntityManager::Instance()->init(&_app, _world);
-    MapManager::Instance()->load(world_num, path);
-    _playing = true;
-    _paused = false;
 
-    //Game loop
-    run();
+    Map *currentMap = MapManager::Instance()->setMap(world_num, map_id);
+    if (currentMap != NULL) {
+        _app.SetSize(currentMap->getMapSize().x, currentMap->getMapSize().y);
+        currentMap->load();
+
+        _playing = true;
+        _paused = false;
+
+        //Game loop
+        run();
+
+    } else {
+        Logger::Instance()->log("Map Id is unknown.");
+    }
 
     MapManager::Instance()->stop();
     EntityManager::Instance()->stop();
@@ -56,7 +65,7 @@ void GameManager::run() {
         _app.Clear(sf::Color::Black);
 
         if (!_paused) {
-            _world->Step(_app.GetFrameTime(), 8, 4);
+            _world->Step(1.0f / 30.0f, 8, 4);
         }
         _app.SetView(view);
         EntityManager::Instance()->render();
@@ -68,7 +77,7 @@ void GameManager::run() {
 }
 
 void GameManager::createWorld() {
-    b2Vec2 gravity(0.0f, -10.0f);
+    b2Vec2 gravity(0.0f, -20.0f);
 	_world = new b2World(gravity, true);
 
 	b2BodyDef groundBodyDef;

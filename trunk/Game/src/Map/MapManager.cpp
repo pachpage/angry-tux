@@ -8,21 +8,29 @@ MapManager::~MapManager() {
 }
 
 void MapManager::init() {
+    _next_id = 1;
+    _currentMap = NULL;
     loadMapList(&Config::Instance()->maps_path);
 }
 
-void MapManager::load(const int world, const std::string& file) {
-    std::multimap<int, Map*>::iterator i;
-    for (i = _arrMap.lower_bound(world); i != _arrMap.upper_bound(world); i++) {
-	       _currentMap = i->second;
-	       _currentMap->load();
+void MapManager::stop() {
+    if (_currentMap != NULL) {
+        delete _currentMap;
     }
 }
 
-void MapManager::stop() {
+Map* MapManager::setMap(const int world, int map_id) {
+    std::multimap<int, Map*>::iterator i;
+    for (i = _arrMap.lower_bound(world); i != _arrMap.upper_bound(world); i++) {
+	       if (i->second->getId() == map_id) {
+                _currentMap = i->second;
+                return _currentMap;
+	       }
+    }
+    return NULL;
 }
 
-void MapManager::loadMapList(std::string *path) {
+void MapManager::loadMapList(const std::string *path) {
     DIR * worlddir = opendir(path->c_str());
     if (worlddir != NULL) {
         struct dirent *worldent, *mapent;
@@ -48,7 +56,8 @@ void MapManager::loadMapList(std::string *path) {
                         }
                         if (file.substr(pos + 1, file.length() - pos - 1) == "xml") {
                             std::string path = temp_path + "/" + file;
-                            _arrMap.insert(std::pair<int, Map*>(world_num, new Map(path)));
+                            _arrMap.insert(std::pair<int, Map*>(world_num, new Map(path, _next_id)));
+                            _next_id++;
                         }
                     }
                     closedir(mapdir);
@@ -62,4 +71,13 @@ void MapManager::loadMapList(std::string *path) {
     } else {
         Logger::Instance()->log("Unable to open " + *path);
     }
+}
+
+std::vector<Map*> MapManager::getWorld(int world) {
+    std::vector<Map*> mapList;
+    std::multimap<int, Map*>::iterator i;
+    for (i = _arrMap.lower_bound(world); i != _arrMap.upper_bound(world); i++) {
+	       mapList.push_back(i->second);
+    }
+    return mapList;
 }

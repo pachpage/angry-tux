@@ -25,10 +25,10 @@ class MapManager : public CSingleton<MapManager>
 {
     public:
         void init();
-        void load(const int world, const std::string& path);
-        void next(const std::string& path = "");
+        Map* setMap(const int world, int map_id);
         void stop();
-        void loadMapList(std::string *path);
+        void loadMapList(const std::string *path);
+        std::vector<Map*> getWorld(int world);
     protected:
     private:
         MapManager();
@@ -36,6 +36,7 @@ class MapManager : public CSingleton<MapManager>
         friend class CSingleton<MapManager>;
         std::multimap<int, Map*> _arrMap;
         Map* _currentMap;
+        int _next_id;
 };
 
 #endif // MAPMANAGER_H
