@@ -20,6 +20,7 @@
 #include "Texture.h"
 #include "Obstacle.h"
 #include "Bar.h"
+#include "Bear.h"
 #include <Box2D/Box2D.h>
 #include <vector>
 
@@ -64,6 +65,7 @@ class EntityManager : public CSingleton<EntityManager>
         friend class CSingleton<EntityManager>;
         std::multimap<int, Texture*> _arrTexture;
         std::vector<Bar*> _arrBar;
+        std::vector<Bear*> _arrBear;
 
         sf::RenderWindow* _app;
         b2World* _world;

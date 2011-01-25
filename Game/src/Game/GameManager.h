@@ -26,7 +26,7 @@ class GameManager : public CSingleton<GameManager>
 {
     public:
         void init();
-        void newGame(const int world_num, const std::string& path = "");
+        void newGame(const int world_num, int map_id);
     protected:
     private:
         GameManager();

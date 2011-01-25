@@ -49,7 +49,7 @@ void EntityManager::loadBear (sf::Vector2i position
                              ,std::string path_texture
                              ,int size
                              ,int score) {
-
+    _arrBear.push_back(new Bear(_app, position, path_texture, size, score, _world));
  }
 
 void EntityManager::loadTux (sf::Vector2i position
@@ -74,6 +74,11 @@ void EntityManager::render() {
     for(itrB = _arrBar.begin(); itrB != _arrBar.end(); itrB++) {
         (*itrB)->render();
     }
+
+    std::vector<Bear*>::iterator itrBe;
+    for(itrBe = _arrBear.begin(); itrBe != _arrBear.end(); itrBe++) {
+        (*itrBe)->render();
+    }
 }
 
 void EntityManager::stop() {
@@ -85,5 +90,10 @@ void EntityManager::stop() {
     std::vector<Bar*>::iterator itrB;
     for(itrB = _arrBar.begin(); itrB != _arrBar.end(); itrB++) {
         delete *itrB;
+    }
+
+    std::vector<Bear*>::iterator itrBe;
+    for(itrBe = _arrBear.begin(); itrBe != _arrBear.end(); itrBe++) {
+        delete *itrBe;
     }
 }
