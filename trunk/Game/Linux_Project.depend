@@ -1963,23 +1963,24 @@
 
 1286989209 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
 
-1295967950 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+1296038622 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
 
-1295967760 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
+1296037096 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
 	<SFML/Graphics.hpp>
 	<Box2D/Box2D.h>
 	"../Utilities/Config.h"
 	"../Entities/EntityManager.h"
 	"../Map/MapManager.h"
 
-1295968043 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
+1296038276 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
 	"../Utilities/Singleton.h"
 	<map>
-	"Map.h"
 	<dirent.h>
+	"World.h"
+	"Map.h"
 
-1295967775 /home/nico/Documents/angry-tux/Game/src/Map/Map.h
+1296038166 /home/nico/Documents/angry-tux/Game/src/Map/Map.h
 	<tinyxml.h>
 	"../Utilities/Config.h"
 	"../Entities/EntityManager.h"
@@ -2013,7 +2014,7 @@
 1295706639 source:/home/nico/Documents/angry-tux/Game/src/Gui/Component.cpp
 	"Component.h"
 
-1295967570 source:/home/nico/Documents/angry-tux/Game/src/Map/Map.cpp
+1296038907 source:/home/nico/Documents/angry-tux/Game/src/Map/Map.cpp
 	"Map.h"
 	<tinyxml.h>
 	<tinyxml.cpp>
@@ -2040,9 +2041,10 @@
 1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinystr.cpp
 	"tinystr.h"
 
-1295967716 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
+1296038898 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
 	"MapManager.h"
 	<sstream>
+	<fstream>
 
 1295709861 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Config.cpp
 	"Config.h"
@@ -2056,8 +2058,14 @@
 1295029401 source:/home/nico/Documents/angry-tux/Game/src/Utilities/RessourceManager.cpp
 	"RessourceManager.h"
 
-1295967902 source:/home/nico/Documents/angry-tux/Game/src/main.cpp
+1296037109 source:/home/nico/Documents/angry-tux/Game/src/main.cpp
 	<iostream>
 	"Utilities/Config.h"
 	"Game/GameManager.h"
+
+1296037221 source:/home/nico/Documents/angry-tux/Game/src/Map/World.cpp
+	"World.h"
+
+1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
+	"../Utilities/Config.h"
 

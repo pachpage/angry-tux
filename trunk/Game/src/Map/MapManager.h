@@ -18,23 +18,28 @@
 #define MAPMANAGER_H
 #include "../Utilities/Singleton.h"
 #include <map>
-#include "Map.h"
 #include <dirent.h>
+#include "World.h"
+#include "Map.h"
 
 class MapManager : public CSingleton<MapManager>
 {
     public:
         void init();
-        Map* setMap(const int world, int map_id);
+        Map* setMap(const std::string &world, int map_id);
+        Map* setNextMap();
         void stop();
         void loadMapList(const std::string *path);
-        std::vector<Map*> getWorld(int world);
+        void loadWorldList(const std::string path);
+        std::vector<Map*> getWorldMaps(const std::string& world);
+        std::vector<World*>& getWorlds();
     protected:
     private:
         MapManager();
         virtual ~MapManager();
         friend class CSingleton<MapManager>;
-        std::multimap<int, Map*> _arrMap;
+        std::multimap<std::string, Map*> _arrMap;
+        std::vector<World*> _arrWorld;
         Map* _currentMap;
         int _next_id;
 };

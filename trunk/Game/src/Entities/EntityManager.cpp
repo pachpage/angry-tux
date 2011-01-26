@@ -4,6 +4,9 @@ EntityManager::EntityManager() {
 }
 
 EntityManager::~EntityManager() {
+    _arrTexture.clear();
+    _arrBar.clear();
+    _arrBear.clear();
 }
 
 void EntityManager::init(sf::RenderWindow* app
@@ -82,7 +85,7 @@ void EntityManager::render() {
 }
 
 void EntityManager::stop() {
-    std::multimap<int, Texture*>::iterator itr;
+    /*std::multimap<int, Texture*>::iterator itr;
     for(itr = _arrTexture.begin(); itr != _arrTexture.end(); itr++) {
         delete itr->second;
     }
@@ -95,5 +98,8 @@ void EntityManager::stop() {
     std::vector<Bear*>::iterator itrBe;
     for(itrBe = _arrBear.begin(); itrBe != _arrBear.end(); itrBe++) {
         delete *itrBe;
-    }
+    }*/
+    _arrTexture.clear();
+    _arrBar.clear();
+    _arrBear.clear();
 }
