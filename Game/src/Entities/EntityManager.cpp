@@ -7,6 +7,7 @@ EntityManager::~EntityManager() {
     _arrTexture.clear();
     _arrBar.clear();
     _arrBear.clear();
+    _arrTux.clear();
 }
 
 void EntityManager::init(sf::RenderWindow* app
@@ -58,7 +59,7 @@ void EntityManager::loadBear (sf::Vector2i position
 void EntityManager::loadTux (sf::Vector2i position
                             ,std::string path_texture
                             ,int type) {
-
+    _arrTux.push_back(new Tux(_app, position, path_texture, type, _world));
 }
 
 void EntityManager::render() {
@@ -82,24 +83,16 @@ void EntityManager::render() {
     for(itrBe = _arrBear.begin(); itrBe != _arrBear.end(); itrBe++) {
         (*itrBe)->render();
     }
+
+    std::vector<Tux*>::iterator itrT;
+    for(itrT = _arrTux.begin(); itrT != _arrTux.end(); itrT++) {
+        (*itrT)->render();
+    }
 }
 
 void EntityManager::stop() {
-    /*std::multimap<int, Texture*>::iterator itr;
-    for(itr = _arrTexture.begin(); itr != _arrTexture.end(); itr++) {
-        delete itr->second;
-    }
-
-    std::vector<Bar*>::iterator itrB;
-    for(itrB = _arrBar.begin(); itrB != _arrBar.end(); itrB++) {
-        delete *itrB;
-    }
-
-    std::vector<Bear*>::iterator itrBe;
-    for(itrBe = _arrBear.begin(); itrBe != _arrBear.end(); itrBe++) {
-        delete *itrBe;
-    }*/
     _arrTexture.clear();
     _arrBar.clear();
     _arrBear.clear();
+    _arrTux.clear();
 }

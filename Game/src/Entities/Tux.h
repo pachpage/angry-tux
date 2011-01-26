@@ -16,15 +16,22 @@
 */
 #ifndef TUX_H
 #define TUX_H
+#include "Entity.h"
+#include <Box2D/Box2D.h>
 
-
-class Tux
+class Tux : public Entity
 {
     public:
-        Tux();
+        Tux(sf::RenderWindow* app
+            ,sf::Vector2i& position
+            ,std::string& path
+            ,int type
+            ,b2World* world);
         virtual ~Tux();
-    protected:
+        void render();
     private:
+        b2Body* _tuxBody;
+        int _type;
 };
 
 #endif // TUX_H

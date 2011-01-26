@@ -4,6 +4,7 @@ GameManager::GameManager() {
 }
 
 GameManager::~GameManager() {
+    delete _eventManager;
     EntityManager::Kill();
     MapManager::Kill();
     _app.Close();
@@ -17,6 +18,11 @@ void GameManager::init() {
     }
     _app.SetFramerateLimit(Config::Instance()->fps);
 
+    sf::View game_view(sf::FloatRect(0, 0, 400, 300));
+    game_view.Move(0, 300);
+    sf::View interface_view(sf::FloatRect(0, 0, 400, 300));
+    _eventManager = new EventManager(&_app, game_view, interface_view);
+
     MapManager::Instance()->init();
 }
 
@@ -28,9 +34,6 @@ void GameManager::newGame(const std::string world, int map_id) {
     if (currentMap != NULL) {
         _app.SetSize(currentMap->getMapSize().x, currentMap->getMapSize().y);
         currentMap->load();
-
-        _playing = true;
-        _paused = false;
 
         //Game loop
         run();
@@ -45,34 +48,18 @@ void GameManager::newGame(const std::string world, int map_id) {
 }
 
 void GameManager::run() {
-    //TODO ajouter une classe Interface qui gère l'affichage d'info par dessus le jeu (bool paused, bool win, bool loose, ect) Gère les touches
-    sf::View view(sf::FloatRect(0, 0, 800, 600));
 
-    while (_playing) {
-        sf::Event Event;
-        while (_app.GetEvent(Event))  {
-            if (Event.Type == sf::Event::Closed || (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Escape)) {
-                _playing = false;
-            } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::P) {
-                _paused = !_paused;
-            } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Equal) {
-                view.Zoom(1.1f);
-            } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Num6) {
-                view.Zoom(0.9f);
-            }
-        }
+    while (_eventManager->isPlaying()) {
 
-        sf::Vector2f mousePosition = _app.ConvertCoords(_app.GetInput().GetMouseX(), _app.GetInput().GetMouseY());
+        _eventManager->manageEvent();
 
         _app.Clear(sf::Color::Black);
 
-        if (!_paused) {
+        if (!_eventManager->isPaused()) {
             _world->Step(1.0f / 30.0f, 8, 4);
         }
-        _app.SetView(view);
-        EntityManager::Instance()->render();
 
-        //_app.SetView(interface); affiche ce qu'il faut sur l'interface (menu, message, hud)
+        EntityManager::Instance()->render();
 
         _app.Display();
     }
