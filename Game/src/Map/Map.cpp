@@ -6,7 +6,7 @@
 #include <tinystr.cpp>
 #include <tinystr.h>
 
-Map::Map(std::string& file, int id) : _file(file)
+Map::Map(std::string& file, int id, std::string world) : _world(world), _file(file)
 {
     _id = id;
     TiXmlDocument doc( file.c_str() );
@@ -184,26 +184,30 @@ int Map::getId() const {
     return _id;
 }
 
-std::string Map::getName() const {
+std::string& Map::getWorld() {
+    return _world;
+}
+
+std::string& Map::getName() {
     return _name;
 }
 
-std::string Map::getAuthor() const {
+std::string& Map::getAuthor() {
     return _author;
 }
 
-std::string Map::getDate() const {
+std::string& Map::getDate() {
     return _date;
 }
 
-std::string Map::getVersion() const {
+std::string& Map::getVersion() {
     return _version;
 }
 
-sf::Vector2i Map::getCamPosition() const {
+sf::Vector2i& Map::getCamPosition() {
     return _camposition;
 }
 
-sf::Vector2i Map::getMapSize() const {
+sf::Vector2i& Map::getMapSize() {
     return _mapSize;
 }

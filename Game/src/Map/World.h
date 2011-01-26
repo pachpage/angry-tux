@@ -14,30 +14,23 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#ifndef GAMEMANAGER_H
-#define GAMEMANAGER_H
-#include <SFML/Graphics.hpp>
-#include <Box2D/Box2D.h>
+#ifndef WORLD_H
+#define WORLD_H
 #include "../Utilities/Config.h"
-#include "../Entities/EntityManager.h"
-#include "../Map/MapManager.h"
 
-class GameManager : public CSingleton<GameManager>
-{
-    public:
-        void init();
-        void newGame(const std::string world, int map_id);
-    protected:
-    private:
-        GameManager();
-        ~GameManager();
-        friend class CSingleton<GameManager>;
-        sf::RenderWindow _app;
-        b2World *_world;
-        bool _playing, _paused;
-        void createWorld();
-        void destroyWorld();
-        void run();
+class World {
+    private :
+        std::string _directory
+                    ,_name;
+        sf::Image *_image;
+        sf::Sprite _sprite;
+
+
+    public :
+        World(std::string directory, std::string name, std::string file_name);
+        std::string& getDirectory();
+        std::string& getName();
+        sf::Sprite& getSprite();
 };
 
-#endif // GAMEMANAGER_H
+#endif

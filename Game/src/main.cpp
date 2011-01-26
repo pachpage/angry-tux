@@ -6,7 +6,7 @@ int main(int argc, char** argv)
 {
     Config::Instance()->init();
     GameManager::Instance()->init();
-    GameManager::Instance()->newGame(1, 1);
+    GameManager::Instance()->newGame("world1", 1);
     GameManager::Kill();
     Config::Kill();
 	return 0;

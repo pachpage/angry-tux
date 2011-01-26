@@ -4,6 +4,8 @@ GameManager::GameManager() {
 }
 
 GameManager::~GameManager() {
+    EntityManager::Kill();
+    MapManager::Kill();
     _app.Close();
 }
 
@@ -18,11 +20,11 @@ void GameManager::init() {
     MapManager::Instance()->init();
 }
 
-void GameManager::newGame(const int world_num, int map_id) {
+void GameManager::newGame(const std::string world, int map_id) {
     createWorld();
     EntityManager::Instance()->init(&_app, _world);
 
-    Map *currentMap = MapManager::Instance()->setMap(world_num, map_id);
+    Map *currentMap = MapManager::Instance()->setMap(world, map_id);
     if (currentMap != NULL) {
         _app.SetSize(currentMap->getMapSize().x, currentMap->getMapSize().y);
         currentMap->load();

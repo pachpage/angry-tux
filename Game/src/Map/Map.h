@@ -6,28 +6,31 @@
 
 class Map
 {
-    public:
-        Map(std::string &file
-            ,int id);
-        virtual ~Map();
-        void load();
-        int getId() const;
-        std::string getName() const;
-        std::string getAuthor() const;
-        std::string getDate() const;
-        std::string getVersion() const;
-        sf::Vector2i getCamPosition() const;
-        sf::Vector2i getMapSize() const;
-    protected:
     private:
         int _id;
-        std::string _name
+        std::string _world
+                    ,_name
                     ,_author
                     ,_date
                     ,_version
                     ,_file;
         sf::Vector2i _camposition;
         sf::Vector2i _mapSize;
+
+    public:
+        Map(std::string &file
+            ,int id
+            ,std::string world);
+        virtual ~Map();
+        void load();
+        int getId() const;
+        std::string& getWorld();
+        std::string& getName();
+        std::string& getAuthor();
+        std::string& getDate();
+        std::string& getVersion();
+        sf::Vector2i& getCamPosition();
+        sf::Vector2i& getMapSize();
 };
 
 #endif // MAP_H
