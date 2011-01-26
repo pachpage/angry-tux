@@ -25,7 +25,7 @@ Bar::Bar(sf::RenderWindow* app
 	fixtureDef.density = 100;
 	fixtureDef.friction = 0.3f;
 	fixtureDef.restitution = 0.3f;
-	fixtureDef.filter.categoryBits = type;
+	fixtureDef.filter.groupIndex = -type;
 
 	_barBody = world->CreateBody(&bd);
     _barBody->CreateFixture(&fixtureDef);

@@ -10,12 +10,13 @@
 		</layer>
 	</layers>
 	<bars>
-		<bar x="400" y="80" width="150" height="20" angle="90" type="4" texture="barre.png" />
+		<bar x="400" y="80" width="150" height="20" angle="90" type="6" texture="barre.png" />
 		<bar x="500" y="80" width="150" height="20" angle="90" type="4" texture="barre.png" />
 	</bars>
 	<bears>
 		<bear x="450" y="150" size="10" score="10" texture="ours.png" />
 	</bears>
 	<tuxs>
+		<tux x="100" y="200" type="4" texture="red_tux.png" />
 	</tuxs>
 </map>

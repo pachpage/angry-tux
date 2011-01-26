@@ -1457,7 +1457,7 @@
 1295705769 /home/nico/Documents/angrytux/Game/src/Gui/Button.h
 	"Component.h"
 
-1295617117 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
+1296060744 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
 	"Bar.h"
 
 1295617111 /home/nico/Documents/angry-tux/Game/src/Entities/Bar.h
@@ -1931,15 +1931,16 @@
 1295616212 source:/home/nico/Documents/angry-tux/Game/src/Entities/Entity.cpp
 	"Entity.h"
 
-1296038976 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
+1296059434 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
 	"EntityManager.h"
 
-1295963033 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
+1296059284 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
 	"../Utilities/Config.h"
 	"Texture.h"
 	"Obstacle.h"
 	"Bar.h"
 	"Bear.h"
+	"Tux.h"
 	<Box2D/Box2D.h>
 	<vector>
 
@@ -1950,7 +1951,7 @@
 	"Texture.h"
 	<Box2D/Box2D.h>
 
-1295616050 source:/home/nico/Documents/angry-tux/Game/src/Entities/Obstacle.cpp
+1296060834 source:/home/nico/Documents/angry-tux/Game/src/Entities/Obstacle.cpp
 	"Obstacle.h"
 
 1296041070 source:/home/nico/Documents/angry-tux/Game/src/Entities/Texture.cpp
@@ -1958,20 +1959,23 @@
 	<math.h>
 	<sstream>
 
-1286961349 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
+1296060731 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
 	"Tux.h"
 
-1286989209 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+1296059129 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+	"Entity.h"
+	<Box2D/Box2D.h>
 
-1296041087 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+1296063463 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
 
-1296037096 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
+1296062253 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
 	<SFML/Graphics.hpp>
 	<Box2D/Box2D.h>
 	"../Utilities/Config.h"
 	"../Entities/EntityManager.h"
 	"../Map/MapManager.h"
+	"EventManager.h"
 
 1296038276 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
 	"../Utilities/Singleton.h"
@@ -2067,5 +2071,11 @@
 	"World.h"
 
 1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
+	"../Utilities/Config.h"
+
+1296064224 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
+	"EventManager.h"
+
+1296062527 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
 

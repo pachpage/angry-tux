@@ -13,9 +13,14 @@ Obstacle::Obstacle(sf::RenderWindow* app
     b2BodyDef obsBodyDef;
 	obsBodyDef.position.Set(position.x, position.y);
 	_obsBody = world->CreateBody(&obsBodyDef);
+
 	b2PolygonShape obsBox;
     obsBox.SetAsBox(_dimension.x/2.0f, _dimension.y/2.0f);
-	_obsBody->CreateFixture(&obsBox, 0.0f);
+
+    b2FixtureDef fixtureDef;
+	fixtureDef.shape = &obsBox;
+
+	_obsBody->CreateFixture(&fixtureDef);
 }
 
 Obstacle::~Obstacle() {
