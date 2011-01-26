@@ -13,7 +13,7 @@ void GameManager::init() {
     if (Config::Instance()->fullscreen) {
         _app.Create(sf::VideoMode(Config::Instance()->width, Config::Instance()->height, Config::Instance()->colors), "AngryTux", sf::Style::Fullscreen);
     } else {
-        _app.Create(sf::VideoMode(Config::Instance()->width, Config::Instance()->height, Config::Instance()->colors), "AngryTux", sf::Style::Close);
+        _app.Create(sf::VideoMode(Config::Instance()->width, Config::Instance()->height, Config::Instance()->colors), "AngryTux");
     }
     _app.SetFramerateLimit(Config::Instance()->fps);
 
