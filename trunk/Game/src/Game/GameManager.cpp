@@ -18,8 +18,7 @@ void GameManager::init() {
     }
     _app.SetFramerateLimit(Config::Instance()->fps);
 
-    sf::View game_view(sf::FloatRect(0, 0, 400, 300));
-    game_view.Move(0, 300);
+    sf::View game_view(sf::FloatRect(0, 0, 800, 600));
     sf::View interface_view(sf::FloatRect(0, 0, 400, 300));
     _eventManager = new EventManager(&_app, game_view, interface_view);
 
