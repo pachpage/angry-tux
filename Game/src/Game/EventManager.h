@@ -16,6 +16,9 @@
 */
 #ifndef EVENTMANAGER_H
 #define EVENTMANAGER_H
+#define ZOOM_DELTA 100
+#define CAMERA_SPEED 5
+#define MARGIN 50
 #include "../Utilities/Config.h"
 
 class EventManager

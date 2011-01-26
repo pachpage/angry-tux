@@ -12,27 +12,31 @@ EventManager::EventManager(sf::RenderWindow* app, sf::View game_view, sf::View i
 
 void EventManager::manageEvent() {
     sf::Event Event;
-    sf::Vector2f z_out(0, _game_view.GetRect().Right);
-    //std::cout << _game_view.GetRect().Right << std::endl;
+
     while (_app->GetEvent(Event))  {
         if (Event.Type == sf::Event::Closed || (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Escape)) {
             _playing = false;
         } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::P) {
             _paused = !_paused;
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta > 0) { //Zoom in
-             /*_game_view.Zoom(1.1f);
-             z_out.x = z_out.x - _game_view.GetRect().Left;
-             std::cout << z_out.x << " " << _game_view.GetRect().Left << std::endl;
-             _game_view.Move(-z_out.x, -z_out.x);*/
-             _game_view.SetFromRect(sf::FloatRect(0,0,400,300));
-             _game_view.Move(0,300);
+             if (_game_view.GetRect().GetHeight() > (Config::Instance()->height/2)) {
+                _game_view.SetFromRect(sf::FloatRect(0,0,_game_view.GetRect().GetWidth() - ZOOM_DELTA,_game_view.GetRect().GetHeight() - ZOOM_DELTA));
+                _game_view.Move(0, Config::Instance()->height - _game_view.GetRect().GetHeight());
+             }
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta < 0) { //Zoom out
-             /*_game_view.Zoom(0.9f);
-             z_out.x = z_out.x - _game_view.GetRect().Left;
-             _game_view.Move(z_out.x, -z_out.x);*/
-             _game_view.SetFromRect(sf::FloatRect(0,0,800,600));
+             if (_game_view.GetRect().GetHeight() < Config::Instance()->height) {
+                _game_view.SetFromRect(sf::FloatRect(0,0,_game_view.GetRect().GetWidth() + ZOOM_DELTA,_game_view.GetRect().GetHeight() + ZOOM_DELTA));
+                _game_view.Move(0, Config::Instance()->height - _game_view.GetRect().GetHeight());
+             }
         }
     }
+
+    if (_app->GetInput().GetMouseX() < MARGIN && _game_view.GetRect().Left > 0) {
+        _game_view.Move(-CAMERA_SPEED, 0);
+    } else if (_app->GetInput().GetMouseX() > _game_view.GetRect().GetWidth() - MARGIN && _game_view.GetRect().Right < Config::Instance()->width) {
+        _game_view.Move(CAMERA_SPEED, 0);
+    }
+
     _app->SetView(_game_view);
     //sf::Vector2f mousePosition = _app.ConvertCoords(_app.GetInput().GetMouseX(), _app.GetInput().GetMouseY());
 }
