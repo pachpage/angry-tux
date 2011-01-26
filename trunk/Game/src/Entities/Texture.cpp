@@ -46,18 +46,19 @@ void Texture::render() {
         _app->Draw(_shape);
     } else {
         if (!_repeat_x && !_repeat_y) {
+            _sprite.SetPosition(_position.x, Conversion::to_sfmlcoord(_position).y);
             _app->Draw(_sprite);
         }
 
         if (_repeat_x && !_repeat_y) {
             float line = ceil(_dimension.x / _image->GetWidth());
             float current_x = 0;
-
             for(int i = 0; i < line; i++) {
                 _sprite.SetPosition(_position.x + current_x, Conversion::to_sfmlcoord(_position).y);
                 _app->Draw(_sprite);
                 current_x += _image->GetWidth();
             }
+
         }
 
         if (!_repeat_x && _repeat_y) {
