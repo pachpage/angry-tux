@@ -15,20 +15,26 @@ Bar::Bar(sf::RenderWindow* app
 	bd.position.Set(_position.x, _position.y);
     bd.type = b2_dynamicBody;
     bd.angle = -Conversion::to_radian(angle);
-    bd.angularDamping = 0.01f;
 
 	b2PolygonShape dynamicBox;
 	dynamicBox.SetAsBox(dimension.x/2.0f, dimension.y/2.0f);
 
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &dynamicBox;
-	fixtureDef.density = 100;
-	fixtureDef.friction = 0.3f;
-	fixtureDef.restitution = 0.3f;
+	fixtureDef.density = 100.0f;
+	fixtureDef.friction = 0.5f;
+	fixtureDef.restitution = 0.0f;
 	fixtureDef.filter.groupIndex = -type;
 
 	_barBody = world->CreateBody(&bd);
     _barBody->CreateFixture(&fixtureDef);
+
+    b2MassData mass_data;
+    mass_data.center = b2Vec2(0,0);
+    mass_data.mass = 80.0f;
+    mass_data.I = 1000.0f;
+
+    _barBody->SetMassData(&mass_data);
 
     _sprite.SetCenter(dimension.x/2, dimension.y/2);
 }

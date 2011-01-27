@@ -28,6 +28,8 @@ void EventManager::manageEvent() {
                 _game_view.SetFromRect(sf::FloatRect(0,0,_game_view.GetRect().GetWidth() + ZOOM_DELTA,_game_view.GetRect().GetHeight() + ZOOM_DELTA));
                 _game_view.Move(0, Config::Instance()->height - _game_view.GetRect().GetHeight());
              }
+        } else if (Event.Type == sf::Event::MouseButtonPressed && Event.MouseButton.Button == sf::Mouse::Left) {
+            EntityManager::Instance()->clic(_app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY()));
         }
     }
 

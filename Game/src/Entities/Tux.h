@@ -28,6 +28,7 @@ class Tux : public Entity
             ,int type
             ,b2World* world);
         virtual ~Tux();
+        void clic(sf::Vector2f& mousePosition);
         void render();
     private:
         b2Body* _tuxBody;

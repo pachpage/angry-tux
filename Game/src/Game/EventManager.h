@@ -20,6 +20,7 @@
 #define CAMERA_SPEED 5
 #define MARGIN 50
 #include "../Utilities/Config.h"
+#include "../Entities/EntityManager.h"
 
 class EventManager
 {
