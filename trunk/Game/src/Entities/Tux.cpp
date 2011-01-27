@@ -18,7 +18,7 @@ Tux::Tux(sf::RenderWindow* app
 
     b2FixtureDef fixtureDef;
 	fixtureDef.shape = &circle;
-	fixtureDef.density = 100;
+	fixtureDef.density = 100.0f;
 	fixtureDef.friction = 0.3f;
 	fixtureDef.restitution = 0.3f;
 	fixtureDef.filter.groupIndex = -type;
@@ -26,10 +26,21 @@ Tux::Tux(sf::RenderWindow* app
 	_tuxBody = world->CreateBody(&bd);
     _tuxBody->CreateFixture(&fixtureDef);
 
+    b2MassData mass_data;
+    mass_data.center = b2Vec2(0,0);
+    mass_data.mass = 20.0f;
+    mass_data.I = 50.0f;
+    _tuxBody->SetMassData(&mass_data);
+
     _sprite.SetCenter(_image->GetWidth()/2, _image->GetHeight()/2);
 }
 
 Tux::~Tux() {
+}
+
+void Tux::clic(sf::Vector2f& mousePosition) {
+    b2Vec2 force = b2Vec2(50000,50000);
+    _tuxBody->ApplyLinearImpulse(force,_tuxBody->GetWorldCenter());
 }
 
 void Tux::render() {

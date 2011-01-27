@@ -55,7 +55,7 @@ void GameManager::run() {
         _app.Clear(sf::Color::Black);
 
         if (!_eventManager->isPaused()) {
-            _world->Step(1.0f / 30.0f, 8, 4);
+            _world->Step(1.0f / 30.0f, 6, 4);
         }
 
         EntityManager::Instance()->render();
@@ -65,7 +65,7 @@ void GameManager::run() {
 }
 
 void GameManager::createWorld() {
-    b2Vec2 gravity(0.0f, -20.0f);
+    b2Vec2 gravity(0.0f, -10.0f);
 	_world = new b2World(gravity, true);
 
 	b2BodyDef groundBodyDef;

@@ -56,6 +56,8 @@ class EntityManager : public CSingleton<EntityManager>
                       ,std::string path_texture
                       ,int type);
 
+        void clic(sf::Vector2f mousePosition);
+
         void render();
 
         void stop();

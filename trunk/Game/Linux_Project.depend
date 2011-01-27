@@ -1457,7 +1457,7 @@
 1295705769 /home/nico/Documents/angrytux/Game/src/Gui/Button.h
 	"Component.h"
 
-1296060744 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
+1296125425 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
 	"Bar.h"
 
 1295617111 /home/nico/Documents/angry-tux/Game/src/Entities/Bar.h
@@ -1931,10 +1931,10 @@
 1295616212 source:/home/nico/Documents/angry-tux/Game/src/Entities/Entity.cpp
 	"Entity.h"
 
-1296059434 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
+1296121832 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
 	"EntityManager.h"
 
-1296059284 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
+1296121829 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
 	"../Utilities/Config.h"
 	"Texture.h"
 	"Obstacle.h"
@@ -1959,14 +1959,14 @@
 	<math.h>
 	<sstream>
 
-1296060731 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
+1296125406 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
 	"Tux.h"
 
-1296059129 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+1296121671 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
 	"Entity.h"
 	<Box2D/Box2D.h>
 
-1296073437 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+1296123611 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
 
 1296062253 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
@@ -2073,9 +2073,10 @@
 1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
 	"../Utilities/Config.h"
 
-1296075410 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
+1296125514 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
 	"EventManager.h"
 
-1296075548 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
+1296121770 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
+	"../Entities/EntityManager.h"
 

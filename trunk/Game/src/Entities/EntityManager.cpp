@@ -62,6 +62,10 @@ void EntityManager::loadTux (sf::Vector2i position
     _arrTux.push_back(new Tux(_app, position, path_texture, type, _world));
 }
 
+void EntityManager::clic(sf::Vector2f mousePosition) {
+    _arrTux[0]->clic(mousePosition);
+}
+
 void EntityManager::render() {
     //We render the background order by position
     for(int i=0; i <= _layer_count; i++) {
