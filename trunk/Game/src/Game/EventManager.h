@@ -16,11 +16,10 @@
 */
 #ifndef EVENTMANAGER_H
 #define EVENTMANAGER_H
-#define ZOOM_DELTA 100
-#define CAMERA_SPEED 5
 #define MARGIN 50
 #include "../Utilities/Config.h"
 #include "../Entities/EntityManager.h"
+#include "Camera.h"
 
 class EventManager
 {
@@ -30,15 +29,15 @@ class EventManager
             ,_loosed
             ,_playing;
         sf::RenderWindow *_app;
-        sf::View _game_view,
-                _interface_view;
+        sf::View _interface_view;
+        Camera* _game_camera;
     public :
         EventManager(sf::RenderWindow* app, sf::View game_view, sf::View interface_view);
         void manageEvent();
         bool isPlaying();
         bool isPaused();
-        sf::View& getGameView();
         sf::View& getInterfaceView();
+        Camera* getCamera();
 };
 
 #endif

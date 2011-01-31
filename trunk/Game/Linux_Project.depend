@@ -2076,7 +2076,14 @@
 1296125514 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
 	"EventManager.h"
 
-1296121770 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
+1296497002 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
 	"../Entities/EntityManager.h"
+	"Camera.h"
+
+1296496871 /home/nico/Documents/angry-tux/Game/src/Game/Camera.h
+	"../Utilities/Config.h"
+
+1296496875 source:/home/nico/Documents/angry-tux/Game/src/Game/Camera.cpp
+	"Camera.h"
 
