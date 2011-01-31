@@ -2,7 +2,7 @@
 
 EventManager::EventManager(sf::RenderWindow* app, sf::View game_view, sf::View interface_view) {
     _app = app;
-    _game_view = game_view;
+    _game_camera = new Camera(game_view);
     _interface_view = interface_view;
     _playing = true;
     _paused = false;
@@ -19,28 +19,22 @@ void EventManager::manageEvent() {
         } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::P) {
             _paused = !_paused;
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta > 0) { //Zoom in
-             if (_game_view.GetRect().GetHeight() > (Config::Instance()->height/2)) {
-                _game_view.SetFromRect(sf::FloatRect(0,0,_game_view.GetRect().GetWidth() - ZOOM_DELTA,_game_view.GetRect().GetHeight() - ZOOM_DELTA));
-                _game_view.Move(0, Config::Instance()->height - _game_view.GetRect().GetHeight());
-             }
+            _game_camera->zoomIn();
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta < 0) { //Zoom out
-             if (_game_view.GetRect().GetHeight() < Config::Instance()->height) {
-                _game_view.SetFromRect(sf::FloatRect(0,0,_game_view.GetRect().GetWidth() + ZOOM_DELTA,_game_view.GetRect().GetHeight() + ZOOM_DELTA));
-                _game_view.Move(0, Config::Instance()->height - _game_view.GetRect().GetHeight());
-             }
+            _game_camera->zoomOut();
         } else if (Event.Type == sf::Event::MouseButtonPressed && Event.MouseButton.Button == sf::Mouse::Left) {
             EntityManager::Instance()->clic(_app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY()));
         }
     }
+    sf::Vector2f mousePosition = _app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY());
 
-    if (_app->GetInput().GetMouseX() < MARGIN && _game_view.GetRect().Left > 0) {
-        _game_view.Move(-CAMERA_SPEED, 0);
-    } else if (_app->GetInput().GetMouseX() > _game_view.GetRect().GetWidth() - MARGIN && _game_view.GetRect().Right < Config::Instance()->width) {
-        _game_view.Move(CAMERA_SPEED, 0);
+    if (_game_camera->getRect().Left > 0 && mousePosition.x <  _game_camera->getRect().Left + MARGIN) {
+        _game_camera->move(0);
+    } else if (mousePosition.x > _game_camera->getRect().GetWidth() - MARGIN && _game_camera->getRect().Right < Config::Instance()->width) {
+        _game_camera->move(1);
     }
 
-    _app->SetView(_game_view);
-    //sf::Vector2f mousePosition = _app.ConvertCoords(_app.GetInput().GetMouseX(), _app.GetInput().GetMouseY());
+    _app->SetView(_game_camera->getView());
 }
 
 bool EventManager::isPlaying() {
@@ -51,10 +45,10 @@ bool EventManager::isPaused() {
     return _paused;
 }
 
-sf::View& EventManager::getGameView() {
-    return _game_view;
-}
-
 sf::View& EventManager::getInterfaceView() {
     return _interface_view;
+}
+
+Camera* EventManager::getCamera() {
+    return _game_camera;
 }

@@ -59,6 +59,8 @@
 		<Unit filename="src/Entities/Texture.h" />
 		<Unit filename="src/Entities/Tux.cpp" />
 		<Unit filename="src/Entities/Tux.h" />
+		<Unit filename="src/Game/Camera.cpp" />
+		<Unit filename="src/Game/Camera.h" />
 		<Unit filename="src/Game/EventManager.cpp" />
 		<Unit filename="src/Game/EventManager.h" />
 		<Unit filename="src/Game/GameManager.cpp" />
