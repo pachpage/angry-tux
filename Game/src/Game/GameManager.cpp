@@ -31,7 +31,7 @@ void GameManager::newGame(const std::string world, int map_id) {
 
     Map *currentMap = MapManager::Instance()->setMap(world, map_id);
     if (currentMap != NULL) {
-        _app.SetSize(currentMap->getMapSize().x, currentMap->getMapSize().y);
+        _eventManager->getCamera()->setSize(currentMap->getMapSize());
         currentMap->load();
 
         //Game loop

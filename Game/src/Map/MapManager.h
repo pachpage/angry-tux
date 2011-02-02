@@ -33,6 +33,7 @@ class MapManager : public CSingleton<MapManager>
         void loadWorldList(const std::string path);
         std::vector<Map*> getWorldMaps(const std::string& world);
         std::vector<World*>& getWorlds();
+        Map* getCurrentMap();
     protected:
     private:
         MapManager();

@@ -16,6 +16,7 @@
             void zoomOut();
             void move(int direction);
             void slide(sf::Vector2i dest);
+            void setSize(sf::Vector2i size);
             sf::FloatRect getRect();
             sf::View& getView();
     };
