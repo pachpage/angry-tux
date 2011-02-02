@@ -18,7 +18,7 @@
 #define EVENTMANAGER_H
 #define MARGIN 50
 #include "../Utilities/Config.h"
-#include "../Entities/EntityManager.h"
+#include "../Map/MapManager.h"
 #include "Camera.h"
 
 class EventManager

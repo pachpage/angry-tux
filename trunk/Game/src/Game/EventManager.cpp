@@ -30,8 +30,12 @@ void EventManager::manageEvent() {
 
     if (_game_camera->getRect().Left > 0 && mousePosition.x <  _game_camera->getRect().Left + MARGIN) {
         _game_camera->move(0);
-    } else if (mousePosition.x > _game_camera->getRect().GetWidth() - MARGIN && _game_camera->getRect().Right < Config::Instance()->width) {
+    } else if (mousePosition.x > _game_camera->getRect().GetWidth() - MARGIN && _game_camera->getRect().Right < MapManager::Instance()->getCurrentMap()->getMapSize().x) {
         _game_camera->move(1);
+    } else if (_game_camera->getRect().Top > 0 && mousePosition.y < _game_camera->getRect().Top + MARGIN) {
+        _game_camera->move(2);
+    } else if (mousePosition.y > _game_camera->getRect().Bottom - MARGIN && _game_camera->getRect().Bottom < MapManager::Instance()->getCurrentMap()->getMapSize().y) {
+        _game_camera->move(3);
     }
 
     _app->SetView(_game_camera->getView());

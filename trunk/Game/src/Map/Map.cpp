@@ -15,7 +15,7 @@ Map::Map(std::string& file, int id, std::string world) : _world(world), _file(fi
     } else {
         TiXmlHandle hdl(&doc);
         try {
-            TiXmlElement *map, *camera;
+            TiXmlElement *map;
             map      = hdl.FirstChildElement("map").Element();
             _name    = map->Attribute("name");
             _author  = map->Attribute("author");
@@ -23,10 +23,6 @@ Map::Map(std::string& file, int id, std::string world) : _world(world), _file(fi
             _version = map->Attribute("version");
             map->QueryIntAttribute("width", &_mapSize.x);
             map->QueryIntAttribute("height", &_mapSize.y);
-
-            camera = map->FirstChildElement("camera");
-            camera->QueryIntAttribute("x", &_camposition.x);
-            camera->QueryIntAttribute("y", &_camposition.y);
         } catch(...) {
             Logger::Instance()->log("The map structure is unknown.");
             Logger::Instance()->log(doc.ErrorDesc());
@@ -202,10 +198,6 @@ std::string& Map::getDate() {
 
 std::string& Map::getVersion() {
     return _version;
-}
-
-sf::Vector2i& Map::getCamPosition() {
-    return _camposition;
 }
 
 sf::Vector2i& Map::getMapSize() {

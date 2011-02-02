@@ -1966,7 +1966,7 @@
 	"Entity.h"
 	<Box2D/Box2D.h>
 
-1296123611 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+1296653054 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
 
 1296062253 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
@@ -1977,14 +1977,14 @@
 	"../Map/MapManager.h"
 	"EventManager.h"
 
-1296038276 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
+1296652435 /home/nico/Documents/angry-tux/Game/src/Map/MapManager.h
 	"../Utilities/Singleton.h"
 	<map>
 	<dirent.h>
 	"World.h"
 	"Map.h"
 
-1296038166 /home/nico/Documents/angry-tux/Game/src/Map/Map.h
+1296652770 /home/nico/Documents/angry-tux/Game/src/Map/Map.h
 	<tinyxml.h>
 	"../Utilities/Config.h"
 	"../Entities/EntityManager.h"
@@ -2018,7 +2018,7 @@
 1295706639 source:/home/nico/Documents/angry-tux/Game/src/Gui/Component.cpp
 	"Component.h"
 
-1296038907 source:/home/nico/Documents/angry-tux/Game/src/Map/Map.cpp
+1296652770 source:/home/nico/Documents/angry-tux/Game/src/Map/Map.cpp
 	"Map.h"
 	<tinyxml.h>
 	<tinyxml.cpp>
@@ -2045,7 +2045,7 @@
 1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinystr.cpp
 	"tinystr.h"
 
-1296038898 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
+1296653313 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
 	"MapManager.h"
 	<sstream>
 	<fstream>
@@ -2073,17 +2073,17 @@
 1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
 	"../Utilities/Config.h"
 
-1296125514 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
+1296652549 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
 	"EventManager.h"
 
-1296497002 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
+1296652580 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
-	"../Entities/EntityManager.h"
+	"../Map/MapManager.h"
 	"Camera.h"
 
-1296496871 /home/nico/Documents/angry-tux/Game/src/Game/Camera.h
+1296652868 /home/nico/Documents/angry-tux/Game/src/Game/Camera.h
 	"../Utilities/Config.h"
 
-1296496875 source:/home/nico/Documents/angry-tux/Game/src/Game/Camera.cpp
+1296652930 source:/home/nico/Documents/angry-tux/Game/src/Game/Camera.cpp
 	"Camera.h"
 

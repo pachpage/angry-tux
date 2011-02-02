@@ -125,3 +125,7 @@ std::vector<Map*> MapManager::getWorldMaps(const std::string& world) {
 std::vector<World*>& MapManager::getWorlds() {
     return _arrWorld;
 }
+
+Map* MapManager::getCurrentMap() {
+    return _currentMap;
+}

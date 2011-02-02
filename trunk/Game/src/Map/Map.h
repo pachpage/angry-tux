@@ -14,7 +14,6 @@ class Map
                     ,_date
                     ,_version
                     ,_file;
-        sf::Vector2i _camposition;
         sf::Vector2i _mapSize;
 
     public:
@@ -29,7 +28,6 @@ class Map
         std::string& getAuthor();
         std::string& getDate();
         std::string& getVersion();
-        sf::Vector2i& getCamPosition();
         sf::Vector2i& getMapSize();
 };
 
