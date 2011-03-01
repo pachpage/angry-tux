@@ -1959,17 +1959,17 @@
 	<math.h>
 	<sstream>
 
-1299003985 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
+1299004238 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
 	"Tux.h"
 
 1298487171 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
 	"Entity.h"
 	<Box2D/Box2D.h>
 
-1296653054 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
+1299005581 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
 
-1296062253 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
+1299005130 /home/nico/Documents/angry-tux/Game/src/Game/GameManager.h
 	<SFML/Graphics.hpp>
 	<Box2D/Box2D.h>
 	"../Utilities/Config.h"
@@ -2045,7 +2045,7 @@
 1269324996 /home/nico/Documents/angry-tux/ExternLibrairies/tinyxml/tinystr.cpp
 	"tinystr.h"
 
-1296653313 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
+1299005953 source:/home/nico/Documents/angry-tux/Game/src/Map/MapManager.cpp
 	"MapManager.h"
 	<sstream>
 	<fstream>
@@ -2053,7 +2053,7 @@
 1295709861 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Config.cpp
 	"Config.h"
 
-1295616005 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Conversion.cpp
+1299004266 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Conversion.cpp
 	"Conversion.h"
 
 1287558593 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Logger.cpp
@@ -2073,10 +2073,10 @@
 1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
 	"../Utilities/Config.h"
 
-1299003881 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
+1299005509 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
 	"EventManager.h"
 
-1297281022 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
+1299006216 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
 	"../Map/MapManager.h"
 	"Camera.h"

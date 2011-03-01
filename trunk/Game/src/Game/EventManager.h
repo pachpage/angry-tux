@@ -27,7 +27,8 @@ class EventManager
         bool _paused
             ,_winner
             ,_loosed
-            ,_playing;
+            ,_playing
+            ,_restart;
         sf::RenderWindow *_app;
         sf::View _interface_view;
         Camera* _game_camera;
@@ -35,9 +36,11 @@ class EventManager
         sf::Vector2f _prevCoords;
     public :
         EventManager(sf::RenderWindow* app, sf::View game_view, sf::View interface_view);
+        void init();
         void manageEvent();
         bool isPlaying();
         bool isPaused();
+        bool isRestarting();
         sf::View& getInterfaceView();
         Camera* getCamera();
 };
