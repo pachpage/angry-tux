@@ -49,10 +49,11 @@ void Tux::mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition,
         float AC = std::sqrt(std::pow(secondPosition.x - thirdPoint.x, 2) + std::pow(secondPosition.y - thirdPoint.x,2));
         float AB = firstPosition.x - thirdPoint.x;
         float BC = secondPosition.y - firstPosition.y;
-        int K = 100000;
+        int K = 1000000;
         std::cout << AB/AC*K << " " << BC/AC*K << std::endl;
         b2Vec2 force = b2Vec2(AB/AC*K, BC/AC*K);
-        _tuxBody->ApplyLinearImpulse(force, _tuxBody->GetWorldCenter());
+        //_tuxBody->ApplyLinearImpulse(force, _tuxBody->GetWorldCenter());
+        _tuxBody->ApplyForce(force, _tuxBody->GetWorldCenter());
     }
 }
 
