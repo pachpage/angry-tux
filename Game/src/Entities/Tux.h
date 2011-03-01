@@ -28,7 +28,7 @@ class Tux : public Entity
             ,int type
             ,b2World* world);
         virtual ~Tux();
-        void clic(sf::Vector2f& mousePosition);
+        void mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition, float time_elapse);
         void render();
     private:
         b2Body* _tuxBody;

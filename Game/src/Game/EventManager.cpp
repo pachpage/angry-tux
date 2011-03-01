@@ -12,6 +12,7 @@ EventManager::EventManager(sf::RenderWindow* app, sf::View game_view, sf::View i
 
 void EventManager::manageEvent() {
     sf::Event Event;
+    sf::Vector2f mousePosition = _app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY());
 
     while (_app->GetEvent(Event))  {
         if (Event.Type == sf::Event::Closed || (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Escape)) {
@@ -23,10 +24,12 @@ void EventManager::manageEvent() {
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta < 0) { //Zoom out
             _game_camera->zoomOut();
         } else if (Event.Type == sf::Event::MouseButtonPressed && Event.MouseButton.Button == sf::Mouse::Left) {
-            EntityManager::Instance()->clic(_app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY()));
+            _intervalClick.Reset();
+            _prevCoords = mousePosition;
+        } else if (Event.Type == sf::Event::MouseButtonReleased && Event.MouseButton.Button == sf::Mouse::Left) {
+            EntityManager::Instance()->mouseReleased(_prevCoords, mousePosition, _intervalClick.GetElapsedTime());
         }
     }
-    sf::Vector2f mousePosition = _app->ConvertCoords(_app->GetInput().GetMouseX(), _app->GetInput().GetMouseY());
 
     if (_game_camera->getRect().Left > 0 && mousePosition.x <  _game_camera->getRect().Left + MARGIN) {
         _game_camera->move(0);

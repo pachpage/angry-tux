@@ -56,7 +56,7 @@ class EntityManager : public CSingleton<EntityManager>
                       ,std::string path_texture
                       ,int type);
 
-        void clic(sf::Vector2f mousePosition);
+        void mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition, float time_elapse);
 
         void render();
 
@@ -74,6 +74,7 @@ class EntityManager : public CSingleton<EntityManager>
         sf::RenderWindow* _app;
         b2World* _world;
         int _layer_count;
+        Tux* _currentTux;
 };
 
 #endif // ENTITYMANAGER_H

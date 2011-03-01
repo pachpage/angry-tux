@@ -19,11 +19,11 @@
 	<File name="src/Entities/Entity.h" open="0" top="0" tabpos="6">
 		<Cursor position="736" topLine="12" />
 	</File>
-	<File name="src/Entities/EntityManager.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="2251" topLine="54" />
+	<File name="src/Entities/EntityManager.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="2496" topLine="59" />
 	</File>
-	<File name="src/Entities/EntityManager.h" open="0" top="0" tabpos="3">
-		<Cursor position="2025" topLine="45" />
+	<File name="src/Entities/EntityManager.h" open="0" top="0" tabpos="2">
+		<Cursor position="2099" topLine="24" />
 	</File>
 	<File name="src/Entities/Obstacle.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="684" topLine="3" />
@@ -37,26 +37,26 @@
 	<File name="src/Entities/Texture.h" open="0" top="0" tabpos="5">
 		<Cursor position="1037" topLine="27" />
 	</File>
-	<File name="src/Entities/Tux.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="732" topLine="17" />
+	<File name="src/Entities/Tux.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="1199" topLine="36" />
 	</File>
-	<File name="src/Entities/Tux.h" open="0" top="0" tabpos="5">
-		<Cursor position="1046" topLine="14" />
+	<File name="src/Entities/Tux.h" open="1" top="0" tabpos="1">
+		<Cursor position="1102" topLine="14" />
 	</File>
-	<File name="src/Game/Camera.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="1093" topLine="19" />
+	<File name="src/Game/Camera.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="1291" topLine="30" />
 	</File>
-	<File name="src/Game/Camera.h" open="1" top="0" tabpos="3">
-		<Cursor position="481" topLine="0" />
+	<File name="src/Game/Camera.h" open="0" top="0" tabpos="3">
+		<Cursor position="467" topLine="0" />
 	</File>
-	<File name="src/Game/EventManager.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="1685" topLine="0" />
+	<File name="src/Game/EventManager.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1376" topLine="20" />
 	</File>
-	<File name="src/Game/EventManager.h" open="1" top="0" tabpos="1">
-		<Cursor position="745" topLine="12" />
+	<File name="src/Game/EventManager.h" open="0" top="0" tabpos="4">
+		<Cursor position="1191" topLine="20" />
 	</File>
-	<File name="src/Game/GameManager.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="1628" topLine="15" />
+	<File name="src/Game/GameManager.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="169" topLine="27" />
 	</File>
 	<File name="src/Game/GameManager.h" open="0" top="0" tabpos="2">
 		<Cursor position="1295" topLine="21" />
@@ -68,16 +68,16 @@
 		<Cursor position="534" topLine="1" />
 	</File>
 	<File name="src/Map/Map.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="7663" topLine="150" />
+		<Cursor position="8542" topLine="182" />
 	</File>
 	<File name="src/Map/Map.h" open="0" top="0" tabpos="7">
-		<Cursor position="636" topLine="13" />
+		<Cursor position="336" topLine="11" />
 	</File>
-	<File name="src/Map/MapManager.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="148" topLine="0" />
+	<File name="src/Map/MapManager.cpp" open="0" top="0" tabpos="8">
+		<Cursor position="129" topLine="0" />
 	</File>
 	<File name="src/Map/MapManager.h" open="0" top="0" tabpos="5">
-		<Cursor position="1122" topLine="23" />
+		<Cursor position="1267" topLine="23" />
 	</File>
 	<File name="src/Map/World.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="299" topLine="0" />
