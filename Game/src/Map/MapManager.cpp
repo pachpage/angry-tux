@@ -18,9 +18,7 @@ void MapManager::init() {
 }
 
 void MapManager::stop() {
-    if (_currentMap != NULL) {
-        delete _currentMap;
-    }
+    _currentMap = NULL;
 }
 
 Map* MapManager::setMap(const std::string &world, int map_id) {

@@ -26,12 +26,15 @@ void GameManager::init() {
 }
 
 void GameManager::newGame(const std::string world, int map_id) {
+    _currentWorld = world;
+    _currentMapId = map_id;
     createWorld();
     EntityManager::Instance()->init(&_app, _world);
 
     Map *currentMap = MapManager::Instance()->setMap(world, map_id);
     if (currentMap != NULL) {
         _eventManager->getCamera()->setSize(currentMap->getMapSize());
+        _eventManager->init();
         currentMap->load();
 
         //Game loop
@@ -44,6 +47,10 @@ void GameManager::newGame(const std::string world, int map_id) {
     MapManager::Instance()->stop();
     EntityManager::Instance()->stop();
     destroyWorld();
+
+    if (_eventManager->isRestarting()) {
+        restart();
+    }
 }
 
 void GameManager::run() {
@@ -62,6 +69,10 @@ void GameManager::run() {
 
         _app.Display();
     }
+}
+
+void GameManager::restart() {
+    newGame(_currentWorld, _currentMapId);
 }
 
 void GameManager::createWorld() {

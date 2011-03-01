@@ -28,6 +28,7 @@ class GameManager : public CSingleton<GameManager>
     public:
         void init();
         void newGame(const std::string world, int map_id);
+        void restart();
     protected:
     private:
         GameManager();
@@ -36,6 +37,8 @@ class GameManager : public CSingleton<GameManager>
         sf::RenderWindow _app;
         b2World *_world;
         EventManager *_eventManager;
+        std::string _currentWorld;
+        int _currentMapId;
         void createWorld();
         void destroyWorld();
         void run();

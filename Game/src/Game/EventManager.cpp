@@ -4,10 +4,15 @@ EventManager::EventManager(sf::RenderWindow* app, sf::View game_view, sf::View i
     _app = app;
     _game_camera = new Camera(game_view);
     _interface_view = interface_view;
+    init();
+}
+
+void EventManager::init() {
     _playing = true;
-    _paused = false;
-    _winner = false;
-    _loosed = false;
+    _paused  = false;
+    _winner  = false;
+    _loosed  = false;
+    _restart = false;
 }
 
 void EventManager::manageEvent() {
@@ -19,6 +24,9 @@ void EventManager::manageEvent() {
             _playing = false;
         } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::P) {
             _paused = !_paused;
+        } else if (Event.Type == sf::Event::KeyPressed && Event.Key.Code == sf::Key::Return) {
+            _restart = true;
+            _playing = false;
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta > 0) { //Zoom in
             _game_camera->zoomIn();
         } else if (Event.Type == sf::Event::MouseWheelMoved && Event.MouseWheel.Delta < 0) { //Zoom out
@@ -50,6 +58,10 @@ bool EventManager::isPlaying() {
 
 bool EventManager::isPaused() {
     return _paused;
+}
+
+bool EventManager::isRestarting() {
+    return _restart;
 }
 
 sf::View& EventManager::getInterfaceView() {
