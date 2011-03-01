@@ -15,6 +15,7 @@ void EntityManager::init(sf::RenderWindow* app
     _app = app;
     _world = world;
     _layer_count = 0;
+    _currentTux = NULL;
 }
 
 void EntityManager::loadTexture (int layer_position
@@ -60,10 +61,13 @@ void EntityManager::loadTux (sf::Vector2i position
                             ,std::string path_texture
                             ,int type) {
     _arrTux.push_back(new Tux(_app, position, path_texture, type, _world));
+    if (_currentTux == NULL) {
+        _currentTux = _arrTux[0];
+    }
 }
 
-void EntityManager::clic(sf::Vector2f mousePosition) {
-    _arrTux[0]->clic(mousePosition);
+void EntityManager::mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition, float time_elapse) {
+    _currentTux->mouseReleased(firstPosition, secondPosition, time_elapse);
 }
 
 void EntityManager::render() {

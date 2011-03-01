@@ -30,6 +30,8 @@ class Conversion {
 
         static sf::Vector2i to_sfmlcoord(sf::Vector2i position);
 
+        static sf::Vector2f to_sfmlcoord(sf::Vector2f position);
+
         static sf::Vector2i to_sfmlcoord(int x, int y);
 
     private:

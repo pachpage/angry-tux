@@ -38,9 +38,22 @@ Tux::Tux(sf::RenderWindow* app
 Tux::~Tux() {
 }
 
-void Tux::clic(sf::Vector2f& mousePosition) {
-    b2Vec2 force = b2Vec2(50000,50000);
-    _tuxBody->ApplyLinearImpulse(force,_tuxBody->GetWorldCenter());
+void Tux::mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition, float time_elapse) {
+    firstPosition = Conversion::to_sfmlcoord(firstPosition);
+    secondPosition = Conversion::to_sfmlcoord(secondPosition);
+
+    sf::Vector2f thirdPoint(firstPosition.x - 100, firstPosition.y);
+
+    if (secondPosition.y > firstPosition.y
+       ) { // && secondPosition.x > thirdPoint.x
+        float AC = std::sqrt(std::pow(secondPosition.x - thirdPoint.x, 2) + std::pow(secondPosition.y - thirdPoint.x,2));
+        float AB = firstPosition.x - thirdPoint.x;
+        float BC = secondPosition.y - firstPosition.y;
+        int K = 100000;
+        std::cout << AB/AC*K << " " << BC/AC*K << std::endl;
+        b2Vec2 force = b2Vec2(AB/AC*K, BC/AC*K);
+        _tuxBody->ApplyLinearImpulse(force, _tuxBody->GetWorldCenter());
+    }
 }
 
 void Tux::render() {

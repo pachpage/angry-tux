@@ -31,6 +31,8 @@ class EventManager
         sf::RenderWindow *_app;
         sf::View _interface_view;
         Camera* _game_camera;
+        sf::Clock _intervalClick;
+        sf::Vector2f _prevCoords;
     public :
         EventManager(sf::RenderWindow* app, sf::View game_view, sf::View interface_view);
         void manageEvent();
