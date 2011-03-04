@@ -5,22 +5,39 @@ Le problème était de pouvoir calculer l'angle former par la souris lors du tir
 
 
 = Details =
+http://data.imagup.com/6/1113913463.PNG
 
 Pour tirer un pingouin dans angry tux, il faut cliquer et maintenir son clic afin de former un angle. Le canon prend alors l'inclinaison former par les 2 points.
 
-Pour calculer cette angle, je procède la manière suivante :
+Pour calculer cette angle, nous procédons la manière suivante :
 
-1) On récupère les coordonnées des 2 points et on projète le second point sur la vertical passant par le premier point.
+1)
 
-2) On ajoute un troisième point d'équation : y3 = y1
-La distance entre le troisième point et le premier clic est égale à la longueur du canon.
+http://data.imagup.com/6/1113913476.PNG
 
-3) On calcule l'angle en radian : arcos(AB/AC) que l'on convertit en degré.
+On récupère les coordonnées des 2 points et on projète le second point sur la vertical passant par le premier point.
 
-4) Les forces a appliqué au pingouin sont obtenus par la formule suivante :
+2)
+
+http://data.imagup.com/4/1113913486.PNG
+
+On ajoute un troisième point d'équation : Ya = Yb
+
+La distance entre le troisième point et le premier clic est égale à la longueur du canon (distance AB).
+
+3)
+
+
+On calcul l'hypoténuse AC = {{{ sqrt((Xc - Xa)^2 + (Yc - Ya)^2) }}}
+
+Puis, on calcule l'angle A : {{{ arcos(AB/AC) * 180/PI }}}
+
+4) 
+
+Les forces a appliqué au pingouin sont obtenus par la formule suivante :
 {{{
-forceX = cos(A)
-forceY = sin(A)
+forceX = cos(A) = AB/AC
+forceY = sin(A) = BC/AC
 }}}
 
-http://data.imagup.com/6/1113899054.PNG
+http://data.imagup.com/5/1113914168.PNG
