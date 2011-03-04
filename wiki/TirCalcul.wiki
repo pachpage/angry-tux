@@ -25,19 +25,22 @@ On ajoute un troisième point d'équation : Ya = Yb
 
 La distance entre le troisième point et le premier clic est égale à la longueur du canon (distance AB).
 
+Maintenant, nous avons un triangle rectangle. *L'angle que nous cherchons est l'angle A.*
+
 3)
 
 
-On calcule l'hypoténuse AC = {{{ sqrt((Xc - Xa)^2 + (Yc - Ya)^2) }}}
+Pour déterminer A, on calcule l'hypoténuse AC = {{{ sqrt((Xc - Xa)^2 + (Yc - Ya)^2) }}}
 
-Puis, on calcule l'angle A : {{{ arcos(AB/AC) * 180/PI }}}
+Puis, on peut calculer l'angle A : {{{ arcos(AB/AC) * 180/PI }}}
 
 4) 
 
 Les forces à appliquer au pingouin sont obtenues par la formule suivante :
 {{{
-forceX = cos(A) = AB/AC
-forceY = sin(A) = BC/AC
+forceX = cos(A) * K = AB/AC * K
+forceY = sin(A) * K = BC/AC * K
 }}}
+constante K = 10000
 
 http://data.imagup.com/5/1113914168.PNG
