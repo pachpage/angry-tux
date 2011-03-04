@@ -1,0 +1,10 @@
+#summary Explication du calcul de l'angle de tir
+
+= Introduction =
+
+Explication du calcul de l'angle de tir
+
+
+= Details =
+
+http://data.imagup.com/6/1113899054.PNG
