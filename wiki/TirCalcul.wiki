@@ -1,10 +1,26 @@
 #summary Explication du calcul de l'angle de tir
 
 = Introduction =
-
-Explication du calcul de l'angle de tir
+Le problème était de pouvoir calculer l'angle former par la souris lors du tir d'un projectile.
 
 
 = Details =
+
+Pour tirer un pingouin dans angry tux, il faut cliquer et maintenir son clic afin de former un angle. Le canon prend alors l'inclinaison former par les 2 points.
+
+Pour calculer cette angle, je procède la manière suivante :
+
+1) On récupère les coordonnées des 2 points et on projète le second point sur la vertical passant par le premier point.
+
+2) On ajoute un troisième point d'équation : y3 = y1
+La distance entre le troisième point et le premier clic est égale à la longueur du canon.
+
+3) On calcule l'angle en radian : arcos(AB/AC) que l'on convertit en degré.
+
+4) Les forces a appliqué au pingouin sont obtenus par la formule suivante :
+{{{
+forceX = cos(A)
+forceY = sin(A)
+}}}
 
 http://data.imagup.com/6/1113899054.PNG
