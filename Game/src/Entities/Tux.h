@@ -18,6 +18,7 @@
 #define TUX_H
 #include "Entity.h"
 #include <Box2D/Box2D.h>
+#include "../Utilities/Algorithm.h"
 
 class Tux : public Entity
 {

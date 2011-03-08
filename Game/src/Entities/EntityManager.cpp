@@ -16,6 +16,9 @@ void EntityManager::init(sf::RenderWindow* app
     _world = world;
     _layer_count = 0;
     _currentTux = NULL;
+    std::string canon_ressource = "canon.png";
+    sf::Vector2i canon_position(10, 100);
+    _canon = new Canon(_app, canon_position, canon_ressource);
 }
 
 void EntityManager::loadTexture (int layer_position
@@ -70,6 +73,10 @@ void EntityManager::mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secon
     _currentTux->mouseReleased(firstPosition, secondPosition, time_elapse);
 }
 
+void EntityManager::mousePressedMoving(sf::Vector2f firstPosition, sf::Vector2f secondPosition) {
+    _canon->setAngle(Algorithm::getAngle(Conversion::to_sfmlcoord(firstPosition), Conversion::to_sfmlcoord(secondPosition)));
+}
+
 void EntityManager::render() {
     //We render the background order by position
     for(int i=0; i <= _layer_count; i++) {
@@ -96,6 +103,8 @@ void EntityManager::render() {
     for(itrT = _arrTux.begin(); itrT != _arrTux.end(); itrT++) {
         (*itrT)->render();
     }
+
+    _canon->render();
 }
 
 void EntityManager::stop() {

@@ -1931,16 +1931,18 @@
 1295616212 source:/home/nico/Documents/angry-tux/Game/src/Entities/Entity.cpp
 	"Entity.h"
 
-1299003940 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
+1299613808 source:/home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.cpp
 	"EntityManager.h"
 
-1297281085 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
+1299613347 /home/nico/Documents/angry-tux/Game/src/Entities/EntityManager.h
 	"../Utilities/Config.h"
+	"../Utilities/Algorithm.h"
 	"Texture.h"
 	"Obstacle.h"
 	"Bar.h"
 	"Bear.h"
 	"Tux.h"
+	"Canon.h"
 	<Box2D/Box2D.h>
 	<vector>
 
@@ -1959,12 +1961,13 @@
 	<math.h>
 	<sstream>
 
-1299016833 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
+1299612732 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
 	"Tux.h"
 
-1298487171 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+1299611980 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
 	"Entity.h"
 	<Box2D/Box2D.h>
+	"../Utilities/Algorithm.h"
 
 1299006199 source:/home/nico/Documents/angry-tux/Game/src/Game/GameManager.cpp
 	"GameManager.h"
@@ -2053,7 +2056,7 @@
 1295709861 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Config.cpp
 	"Config.h"
 
-1299004266 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Conversion.cpp
+1299183474 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Conversion.cpp
 	"Conversion.h"
 
 1287558593 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Logger.cpp
@@ -2073,10 +2076,10 @@
 1296039019 /home/nico/Documents/angry-tux/Game/src/Map/World.h
 	"../Utilities/Config.h"
 
-1299006247 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
+1299613756 source:/home/nico/Documents/angry-tux/Game/src/Game/EventManager.cpp
 	"EventManager.h"
 
-1299006216 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
+1299613518 /home/nico/Documents/angry-tux/Game/src/Game/EventManager.h
 	"../Utilities/Config.h"
 	"../Map/MapManager.h"
 	"Camera.h"
@@ -2087,9 +2090,17 @@
 1296652930 source:/home/nico/Documents/angry-tux/Game/src/Game/Camera.cpp
 	"Camera.h"
 
-1299016687 source:/home/nico/Documents/angry-tux/Game/src/Entities/Canon.cpp
+1299613713 source:/home/nico/Documents/angry-tux/Game/src/Entities/Canon.cpp
 	"Canon.h"
 
-1299016698 /home/nico/Documents/angry-tux/Game/src/Entities/Canon.h
+1299613403 /home/nico/Documents/angry-tux/Game/src/Entities/Canon.h
 	"Entity.h"
+
+1299612207 /home/nico/Documents/angry-tux/Game/src/Utilities/Algorithm.h
+	"Conversion.h"
+	"math.h"
+	<iostream>
+
+1299612514 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Algorithm.cpp
+	"Algorithm.h"
 

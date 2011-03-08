@@ -13,6 +13,7 @@ void EventManager::init() {
     _winner  = false;
     _loosed  = false;
     _restart = false;
+    _moving  = false;
 }
 
 void EventManager::manageEvent() {
@@ -34,7 +35,13 @@ void EventManager::manageEvent() {
         } else if (Event.Type == sf::Event::MouseButtonPressed && Event.MouseButton.Button == sf::Mouse::Left) {
             _intervalClick.Reset();
             _prevCoords = mousePosition;
+            _moving = true;
+        } else if (Event.Type == sf::Event::MouseMoved) {
+            if (_moving) {
+                EntityManager::Instance()->mousePressedMoving(_prevCoords, mousePosition);
+            }
         } else if (Event.Type == sf::Event::MouseButtonReleased && Event.MouseButton.Button == sf::Mouse::Left) {
+            _moving = false;
             EntityManager::Instance()->mouseReleased(_prevCoords, mousePosition, _intervalClick.GetElapsedTime());
         }
     }
