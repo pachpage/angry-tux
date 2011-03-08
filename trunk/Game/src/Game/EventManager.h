@@ -28,7 +28,8 @@ class EventManager
             ,_winner
             ,_loosed
             ,_playing
-            ,_restart;
+            ,_restart
+            ,_moving;
         sf::RenderWindow *_app;
         sf::View _interface_view;
         Camera* _game_camera;

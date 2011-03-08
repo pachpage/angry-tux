@@ -77,6 +77,8 @@
 		<Unit filename="src/Map/MapManager.h" />
 		<Unit filename="src/Map/World.cpp" />
 		<Unit filename="src/Map/World.h" />
+		<Unit filename="src/Utilities/Algorithm.cpp" />
+		<Unit filename="src/Utilities/Algorithm.h" />
 		<Unit filename="src/Utilities/Config.cpp" />
 		<Unit filename="src/Utilities/Config.h" />
 		<Unit filename="src/Utilities/Conversion.cpp" />

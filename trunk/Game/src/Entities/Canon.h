@@ -23,6 +23,9 @@
             Canon(sf::RenderWindow* app
             ,sf::Vector2i& position
             ,std::string path);
+
+            void setAngle(float angle);
+            void render();
     };
 
 #endif

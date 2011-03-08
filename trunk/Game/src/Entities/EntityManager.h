@@ -17,11 +17,13 @@
 #ifndef ENTITYMANAGER_H
 #define ENTITYMANAGER_H
 #include "../Utilities/Config.h"
+#include "../Utilities/Algorithm.h"
 #include "Texture.h"
 #include "Obstacle.h"
 #include "Bar.h"
 #include "Bear.h"
 #include "Tux.h"
+#include "Canon.h"
 #include <Box2D/Box2D.h>
 #include <vector>
 
@@ -56,6 +58,8 @@ class EntityManager : public CSingleton<EntityManager>
                       ,std::string path_texture
                       ,int type);
 
+        void mousePressedMoving(sf::Vector2f firstPosition, sf::Vector2f secondPosition);
+
         void mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition, float time_elapse);
 
         void render();
@@ -75,6 +79,7 @@ class EntityManager : public CSingleton<EntityManager>
         b2World* _world;
         int _layer_count;
         Tux* _currentTux;
+        Canon* _canon;
 };
 
 #endif // ENTITYMANAGER_H
