@@ -1,4 +1,4 @@
-#summary How to execute the project ?
+#summary How to execute the project?
 
 *Windows plateform*
 
