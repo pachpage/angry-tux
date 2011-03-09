@@ -2,9 +2,9 @@
 
 *Windows plateform*
 
-Exéxution sous Windows
+The game requires Box2D and SFML librairies. If you download the full version of the game, these dll are included in the archive.
 
-The game requires some librairies, you can download the full version or download the game and the librairies separately.
+You can also download the lite version and download librairies separately.
 
 Dll are available from here : http://code.google.com/p/angry-tux/downloads/detail?name=windows_dll.zip&can=2&q=#makechanges
 
