@@ -3,8 +3,11 @@
 = Introduction =
 
 The project required some librairies :
+
 * SFML
+
 * Box2d
+
 * Qt (only the editor)
 
 
