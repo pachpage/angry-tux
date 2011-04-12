@@ -1457,7 +1457,7 @@
 1295705769 /home/nico/Documents/angrytux/Game/src/Gui/Button.h
 	"Component.h"
 
-1296125425 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
+1302627638 source:/home/nico/Documents/angry-tux/Game/src/Entities/Bar.cpp
 	"Bar.h"
 
 1295617111 /home/nico/Documents/angry-tux/Game/src/Entities/Bar.h
@@ -1961,10 +1961,10 @@
 	<math.h>
 	<sstream>
 
-1299612732 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
+1302023229 source:/home/nico/Documents/angry-tux/Game/src/Entities/Tux.cpp
 	"Tux.h"
 
-1299611980 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
+1299782476 /home/nico/Documents/angry-tux/Game/src/Entities/Tux.h
 	"Entity.h"
 	<Box2D/Box2D.h>
 	"../Utilities/Algorithm.h"
@@ -2090,7 +2090,7 @@
 1296652930 source:/home/nico/Documents/angry-tux/Game/src/Game/Camera.cpp
 	"Camera.h"
 
-1299613713 source:/home/nico/Documents/angry-tux/Game/src/Entities/Canon.cpp
+1299613831 source:/home/nico/Documents/angry-tux/Game/src/Entities/Canon.cpp
 	"Canon.h"
 
 1299613403 /home/nico/Documents/angry-tux/Game/src/Entities/Canon.h
@@ -2101,6 +2101,6 @@
 	"math.h"
 	<iostream>
 
-1299612514 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Algorithm.cpp
+1300036789 source:/home/nico/Documents/angry-tux/Game/src/Utilities/Algorithm.cpp
 	"Algorithm.h"
 
