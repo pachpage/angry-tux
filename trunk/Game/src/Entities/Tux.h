@@ -34,6 +34,10 @@ class Tux : public Entity
     private:
         b2Body* _tuxBody;
         int _type;
+        bool _fire;
+        b2Vec2 _force;
+        int cpt;
+        sf::Clock _timer;
 };
 
 #endif // TUX_H

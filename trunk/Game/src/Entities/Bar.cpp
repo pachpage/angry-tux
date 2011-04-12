@@ -21,7 +21,7 @@ Bar::Bar(sf::RenderWindow* app
 
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &dynamicBox;
-	fixtureDef.density = 100.0f;
+	fixtureDef.density = 0.2f;
 	fixtureDef.friction = 0.5f;
 	fixtureDef.restitution = 0.0f;
 	fixtureDef.filter.groupIndex = -type;
@@ -29,12 +29,12 @@ Bar::Bar(sf::RenderWindow* app
 	_barBody = world->CreateBody(&bd);
     _barBody->CreateFixture(&fixtureDef);
 
-    b2MassData mass_data;
+   /* b2MassData mass_data;
     mass_data.center = b2Vec2(0,0);
-    mass_data.mass = 80.0f;
-    mass_data.I = 1000.0f;
+    mass_data.mass = 60.0f;
+    mass_data.I = 2000.0f;
 
-    _barBody->SetMassData(&mass_data);
+    _barBody->SetMassData(&mass_data);*/
 
     _sprite.SetCenter(dimension.x/2, dimension.y/2);
 }

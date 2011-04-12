@@ -6,6 +6,7 @@ Tux::Tux(sf::RenderWindow* app
             ,int type
             ,b2World* world) : Entity(app, position, path = "tuxs/" + path, 0){
     _type = type;
+    _fire = false;
 
     //Physics definition
     b2BodyDef bd;
@@ -18,7 +19,7 @@ Tux::Tux(sf::RenderWindow* app
 
     b2FixtureDef fixtureDef;
 	fixtureDef.shape = &circle;
-	fixtureDef.density = 100.0f;
+	fixtureDef.density = 1.0f;
 	fixtureDef.friction = 0.3f;
 	fixtureDef.restitution = 0.3f;
 	fixtureDef.filter.groupIndex = -type;
@@ -28,8 +29,8 @@ Tux::Tux(sf::RenderWindow* app
 
     b2MassData mass_data;
     mass_data.center = b2Vec2(0,0);
-    mass_data.mass = 20.0f;
-    mass_data.I = 50.0f;
+    mass_data.mass = 250.0f;
+    mass_data.I = 600.0f;
     _tuxBody->SetMassData(&mass_data);
 
     _sprite.SetCenter(_image->GetWidth()/2, _image->GetHeight()/2);
@@ -46,11 +47,25 @@ void Tux::mouseReleased(sf::Vector2f firstPosition, sf::Vector2f secondPosition,
     float angle = Algorithm::getAngle(firstPosition, secondPosition);
     std::cout << "Angle: " << angle << std::endl;
 
-    b2Vec2 force = b2Vec2(cos(Conversion::to_radian(angle)) * K, sin(Conversion::to_radian(angle)) * K);
-    _tuxBody->ApplyForce(force, _tuxBody->GetWorldCenter());
+    _force = b2Vec2(cos(Conversion::to_radian(angle)) * K, sin(Conversion::to_radian(angle)) * K);
+    _tuxBody->ApplyForce(_force, _tuxBody->GetWorldCenter());
+    _fire = true;
+    cpt=0;
 }
 
 void Tux::render() {
+        if (_fire) {
+            if (_timer.GetElapsedTime() > 0.5) {
+                if (cpt < 3) {
+                     _tuxBody->ApplyForce(_force, _tuxBody->GetWorldCenter());
+                     cpt++;
+                } else {
+                    _fire = false;
+                }
+                _timer.Reset();
+            }
+        }
+
     sf::Vector2i position_sfml = Conversion::to_sfmlcoord(_tuxBody->GetPosition().x, _tuxBody->GetPosition().y);
     _sprite.SetPosition(position_sfml.x, position_sfml.y);
     _sprite.SetRotation(Conversion::to_degres(_tuxBody->GetAngle()));
