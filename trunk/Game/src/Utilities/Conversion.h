@@ -34,6 +34,8 @@ class Conversion {
 
         static sf::Vector2i to_sfmlcoord(int x, int y);
 
+        static sf::Vector2i to_box2d(int x, int y);
+
     private:
         Conversion();
 };

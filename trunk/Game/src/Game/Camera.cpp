@@ -5,16 +5,16 @@ Camera::Camera(sf::View camera) {
 }
 
 void Camera::zoomIn() {
-    if (_camera.GetRect().GetHeight() > (Config::Instance()->height/2)) {
+    if (_camera.GetRect().GetHeight() > (Config::Instance()->map_height/2)) {
         _camera.SetFromRect(sf::FloatRect(0,0,_camera.GetRect().GetWidth() - ZOOM_DELTA,_camera.GetRect().GetHeight() - ZOOM_DELTA));
-        _camera.Move(0, Config::Instance()->height - _camera.GetRect().GetHeight());
+        _camera.Move(0, Config::Instance()->map_height - _camera.GetRect().GetHeight());
      }
 }
 
 void Camera::zoomOut() {
-    if (_camera.GetRect().GetHeight() < Config::Instance()->height) {
+    if (_camera.GetRect().GetHeight() < Config::Instance()->map_height) {
         _camera.SetFromRect(sf::FloatRect(0,0,_camera.GetRect().GetWidth() + ZOOM_DELTA,_camera.GetRect().GetHeight() + ZOOM_DELTA));
-        _camera.Move(0, Config::Instance()->height - _camera.GetRect().GetHeight());
+        _camera.Move(0, Config::Instance()->map_height - _camera.GetRect().GetHeight());
      }
 }
 

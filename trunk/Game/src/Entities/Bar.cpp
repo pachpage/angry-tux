@@ -29,13 +29,6 @@ Bar::Bar(sf::RenderWindow* app
 	_barBody = world->CreateBody(&bd);
     _barBody->CreateFixture(&fixtureDef);
 
-   /* b2MassData mass_data;
-    mass_data.center = b2Vec2(0,0);
-    mass_data.mass = 60.0f;
-    mass_data.I = 2000.0f;
-
-    _barBody->SetMassData(&mass_data);*/
-
     _sprite.SetCenter(dimension.x/2, dimension.y/2);
 }
 

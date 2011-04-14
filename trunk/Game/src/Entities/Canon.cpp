@@ -11,5 +11,5 @@ void Canon::setAngle(float angle) {
 }
 
 void Canon::render() {
-    _app->Draw(_sprite);
+   // _app->Draw(_sprite);
 }

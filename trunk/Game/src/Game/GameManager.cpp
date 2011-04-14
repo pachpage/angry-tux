@@ -33,7 +33,7 @@ void GameManager::newGame(const std::string world, int map_id) {
 
     Map *currentMap = MapManager::Instance()->setMap(world, map_id);
     if (currentMap != NULL) {
-        _eventManager->getCamera()->setSize(currentMap->getMapSize());
+
         _eventManager->init();
         currentMap->load();
 
@@ -78,13 +78,13 @@ void GameManager::restart() {
 void GameManager::createWorld() {
     b2Vec2 gravity(0.0f, -10.0f);
 	_world = new b2World(gravity, true);
-
+/*
 	b2BodyDef groundBodyDef;
 	groundBodyDef.position.Set(0.0f, 0.0f);
 	b2Body* groundBody = _world->CreateBody(&groundBodyDef);
 	b2PolygonShape groundBox;
 	groundBox.SetAsBox(_app.GetWidth(), 0.0f);
-	groundBody->CreateFixture(&groundBox, 0.0f);
+	groundBody->CreateFixture(&groundBox, 0.0f);*/
 }
 
 void GameManager::destroyWorld() {
