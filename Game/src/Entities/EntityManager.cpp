@@ -17,7 +17,7 @@ void EntityManager::init(sf::RenderWindow* app
     _layer_count = 0;
     _currentTux = NULL;
     std::string canon_ressource = "canon.png";
-    sf::Vector2i canon_position(10, 100);
+    sf::Vector2i canon_position(10, 700);
     _canon = new Canon(_app, canon_position, canon_ressource);
 }
 

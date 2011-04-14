@@ -1,22 +1,25 @@
 <?xml version="1.0" ?>
-<map name="map de test" author="nico" date="10/10/2010" version="1" width="800" height="600">
+<map name="map de test" author="nico" date="10/10/2010" version="1" width="1000" height="800">
 	<layers>
 		<layer name="background">
-			<texture x="400" y="300" width="800" height="600" class="texture" texture="" angle="0" repeat_x="false" repeat_y="false" color="102,102,204" />
+			<texture x="500" y="400" width="2000" height="800" class="texture" texture="" angle="0" repeat_x="false" repeat_y="false" color="102,102,204" />
+		</layer>
+		<layer name="background">
+			<texture x="10" y="10" width="10" height="10" class="texture" texture="" angle="0" repeat_x="false" repeat_y="false" color="255,0,0" />
 		</layer>
 		<layer name="ground">
-			<texture x="400" y="17" width="800" height="35" class="obstacle" texture="ground1.png" angle="0" repeat_x="true" repeat_y="false" color="" />
+			<texture x="500" y="10" width="1000" height="35" class="obstacle" texture="ground1.png" angle="0" repeat_x="true" repeat_y="false" color="" />
 		</layer>
 	</layers>
 	<bars>
-		<bar x="400" y="110" width="150" height="20" angle="90" type="1" texture="barre.png" />
-		<bar x="500" y="110" width="150" height="20" angle="90" type="2" texture="barre.png" />
-		<bar x="400" y="200" width="150" height="20" angle="0" type="3" texture="barre.png" />
+		<bar x="500" y="100" width="150" height="20" angle="90" type="1" texture="barre.png" />
+		<bar x="600" y="100" width="150" height="20" angle="90" type="2" texture="barre.png" />
+		<bar x="550" y="180" width="150" height="20" angle="0" type="3" texture="barre.png" />
 	</bars>
 	<bears>
-		<bear x="600" y="150" size="10" score="10" texture="ours.png" />
+		<bear x="550" y="50" size="10" score="10" texture="ours.png" />
 	</bears>
 	<tuxs>
-		<tux x="100" y="80" type="4" texture="red_tux.png" />
+		<tux x="100" y="40" type="4" texture="red_tux.png" />
 	</tuxs>
 </map>

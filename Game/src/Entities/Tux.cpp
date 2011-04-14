@@ -10,7 +10,7 @@ Tux::Tux(sf::RenderWindow* app
 
     //Physics definition
     b2BodyDef bd;
-	bd.position.Set(_position.x, _position.y);
+	bd.position.Set(_position.x,  _position.y);
     bd.type = b2_dynamicBody;
     bd.angularDamping = 0.01f;
 

@@ -24,7 +24,7 @@
 class Config : public CSingleton<Config>
 {
     public:
-        int width, height, colors, fps;
+        int width, height, colors, fps, map_width, map_height;
         bool fullscreen, debug;
         std::string image_path, maps_path;
         void init();

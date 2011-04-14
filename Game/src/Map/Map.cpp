@@ -23,6 +23,7 @@ Map::Map(std::string& file, int id, std::string world) : _world(world), _file(fi
             _version = map->Attribute("version");
             map->QueryIntAttribute("width", &_mapSize.x);
             map->QueryIntAttribute("height", &_mapSize.y);
+            Config::Instance()->map_height = _mapSize.y;
         } catch(...) {
             Logger::Instance()->log("The map structure is unknown.");
             Logger::Instance()->log(doc.ErrorDesc());
@@ -79,6 +80,7 @@ void Map::load() {
                         repeat_x     = (str_rx == "true");
                         str_ry       = texture->Attribute("repeat_y");
                         repeat_y     = (str_ry == "true");
+
                         EntityManager::Instance()->loadTexture(layer_position, str_class, position, path_texture, dimension, angle, repeat_x, repeat_y, color);
 
                         texture = texture->NextSiblingElement();
@@ -117,6 +119,7 @@ void Map::load() {
                     Logger::Instance()->log("Attribute angle doesn't exist in bar tag.");
                 }
                 path_texture = bar->Attribute("texture");
+
                 EntityManager::Instance()->loadBar(position, path_texture, dimension, angle, type);
 
                 bar = bar->NextSiblingElement();
@@ -142,6 +145,7 @@ void Map::load() {
                     Logger::Instance()->log("Attribute score doesn't exist in bear tag.");
                 }
                 path_texture = bear->Attribute("texture");
+
                 EntityManager::Instance()->loadBear(position, path_texture, size, score);
 
                 bear = bear->NextSiblingElement();
@@ -164,6 +168,7 @@ void Map::load() {
                     Logger::Instance()->log("Attribute type doesn't exist in tux tag.");
                 }
                 path_texture = tux->Attribute("texture");
+
                 EntityManager::Instance()->loadTux(position, path_texture, type);
 
                 tux = tux->NextSiblingElement();
